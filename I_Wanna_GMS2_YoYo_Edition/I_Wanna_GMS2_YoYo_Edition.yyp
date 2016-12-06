@@ -873,6 +873,481 @@
                 "resourcePath": "sprites\\sprCamera\\sprCamera.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "a0e96847-2d01-48fc-a74f-c1796a13fb56",
+            "Value": {
+                "id": "177b576f-9802-4882-97b9-77083b8a4575",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprGameOver\\sprGameOver.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89e01360-c498-4a88-982f-0c42ae07ca1f",
+            "Value": {
+                "id": "30dc7625-6f62-4669-bd93-37b6635fa700",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprBlock\\sprBlock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d7ea4b39-4e7c-4143-853d-e177eb27f153",
+            "Value": {
+                "id": "71521be6-2e26-471d-8848-4f244bdbd7d0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprMiniBlock\\sprMiniBlock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a1a76abb-a822-40c3-ad54-0cc29425f42a",
+            "Value": {
+                "id": "eb6d76f9-47ff-4d27-97b9-bb73680a9945",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSlipBlock\\sprSlipBlock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5e703a05-c601-473c-80bc-83896dfdf30c",
+            "Value": {
+                "id": "9ae3e521-13d2-431a-b605-d4e22fc7fcc3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprKillerBlock\\sprKillerBlock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fad7c12a-8d0d-4853-9848-953a403b5f64",
+            "Value": {
+                "id": "e865f14e-2d56-4caa-b605-f67fb9123c7d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSlideBlockR\\sprSlideBlockR.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "70e6a3ea-2086-492f-804e-4b33390544b0",
+            "Value": {
+                "id": "2f96349b-7a22-4ea8-9434-c7b48d5bf545",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSlideBlockL\\sprSlideBlockL.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "90d1ac80-149c-4387-aa3b-9413bb0c1803",
+            "Value": {
+                "id": "2e841e38-e5b0-4790-9713-d8e9d008e7cf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSlideBlock\\sprSlideBlock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d5ee3e23-fe0f-4c8f-88b4-e654b363963d",
+            "Value": {
+                "id": "56cb173b-989b-4f79-82e1-5ad2fd893e83",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSaveBlocker\\sprSaveBlocker.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9f9db394-04bf-44d1-be72-3240a856fa78",
+            "Value": {
+                "id": "b3f13d65-40dd-4aad-9353-70777345dc89",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSlopeBlock\\sprSlopeBlock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fd155a3b-bd6f-480c-8486-4da947c5e635",
+            "Value": {
+                "id": "89c39885-532f-4810-bacf-dd1d218da0f2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSlopeDownLeft\\sprSlopeDownLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2b14b5a9-dd42-427f-ba63-07d68759934b",
+            "Value": {
+                "id": "85527c5e-ce46-4d9b-86f7-102735fc4757",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSlopeDownRight\\sprSlopeDownRight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6595cc8c-1b00-4329-82cc-9934826ae277",
+            "Value": {
+                "id": "edcd632f-5429-4a2b-b638-e72f253ef4c3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSlopeUpLeft\\sprSlopeUpLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "833ba609-071a-4984-baf1-4643dc139bd4",
+            "Value": {
+                "id": "7f00d451-a026-42e3-b856-bd66c1e351d9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSlopeUpRight\\sprSlopeUpRight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "98244f98-6698-4b3d-9808-3ba650330384",
+            "Value": {
+                "id": "0ca48be8-8da8-4d4e-b819-44d984b22260",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprPlatform\\sprPlatform.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a54762cb-03d4-471d-8f10-7e98804eab6f",
+            "Value": {
+                "id": "5c1086ed-3bcd-47c1-aef2-deabdb468c98",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprMovingPlatform\\sprMovingPlatform.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ee92d6cf-72d8-4c79-8899-93ef1f6395e0",
+            "Value": {
+                "id": "7d605df5-53ce-439c-ab00-56c59b674682",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSpikeUp\\sprSpikeUp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "37a0a4ca-70d3-4ab8-850d-eabf0331e06d",
+            "Value": {
+                "id": "b6771bba-c431-4599-b4cc-4cc73c0b16ed",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSpikeRight\\sprSpikeRight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9b72dbe2-14bc-4e8e-8f6c-14cd2c93a567",
+            "Value": {
+                "id": "4916d984-ca45-4889-9d75-dd2931492940",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSpikeLeft\\sprSpikeLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "622d47ed-90b0-4e54-888b-dae678eefd92",
+            "Value": {
+                "id": "92abff5f-b120-4517-8d23-5301b86e8fe4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSpikeDown\\sprSpikeDown.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "47d4b739-e205-4d6b-a1c1-712a87b52c3b",
+            "Value": {
+                "id": "e6be436a-9efe-4200-b93d-dd8faee36113",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprMiniSpikeUp\\sprMiniSpikeUp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5ed38e4b-5ca8-4425-840f-18806bb229da",
+            "Value": {
+                "id": "292e178f-01e9-4a0b-889a-227f1dcdb625",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprMiniSpikeRight\\sprMiniSpikeRight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "94f609d8-95da-45fd-b2ef-994afd1083cf",
+            "Value": {
+                "id": "f907f414-5223-4aef-a7ac-b8f6d3f92d35",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprMiniSpikeLeft\\sprMiniSpikeLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "81944ed4-e143-4617-8842-7a244c1666d7",
+            "Value": {
+                "id": "3106385e-e43d-427d-989b-4a4f042f9960",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprMiniSpikeDown\\sprMiniSpikeDown.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d3264c4b-b70f-4d48-bafe-9b691030956a",
+            "Value": {
+                "id": "72f54d9e-abf0-4698-a156-ac30a6d3b6dc",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprCherry\\sprCherry.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "room_order": [
