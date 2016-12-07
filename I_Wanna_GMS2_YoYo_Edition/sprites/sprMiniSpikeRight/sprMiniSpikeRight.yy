@@ -1,7 +1,7 @@
 {
     "id": "5ed38e4b-5ca8-4425-840f-18806bb229da",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.1",
     "name": "sprMiniSpikeRight",
     "For3D": false,
     "HTile": false,

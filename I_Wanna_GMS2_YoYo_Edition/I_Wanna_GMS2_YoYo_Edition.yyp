@@ -1348,6 +1348,253 @@
                 "resourcePath": "sprites\\sprCherry\\sprCherry.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "b475ef32-0d70-4c1e-b0ec-59591c4fc51d",
+            "Value": {
+                "id": "073b6a6b-fc8a-4793-bf15-87cfd76be511",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprTriggerMask\\sprTriggerMask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c737d3c3-840a-486f-a331-c9ac7306a926",
+            "Value": {
+                "id": "cf30e8c6-ea24-49b6-98a1-e79c815248d8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprTriggerButton\\sprTriggerButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a4e62711-938e-4e9e-b72f-2726f19a3847",
+            "Value": {
+                "id": "2756b1e9-0506-4d5d-84ff-2e7ffa5ec201",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSpikeTriggerUp\\sprSpikeTriggerUp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1782d0ec-a3af-4056-aa45-195a8f29a2c9",
+            "Value": {
+                "id": "01d51493-e6df-4dc3-b40a-99c0cdf25cf7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSpikeTriggerRight\\sprSpikeTriggerRight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2648f878-f9fc-4b37-ab13-e833826d66a2",
+            "Value": {
+                "id": "29949d94-97ce-4b34-b80e-2723657a521d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSpikeTriggerLeft\\sprSpikeTriggerLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d5adbba7-52f2-47dd-a90e-1487b855bd61",
+            "Value": {
+                "id": "7479dcd0-237f-45c4-a8ff-065841e0bcd5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSpikeTriggerDown\\sprSpikeTriggerDown.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f49f3b59-40a1-4590-9d0f-ea8b3b0d1a2b",
+            "Value": {
+                "id": "a1b6c5e8-1887-4c09-b7a0-f11d1f476e17",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprWarp\\sprWarp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4650b18e-ae0f-417b-8c2b-92c63900bf83",
+            "Value": {
+                "id": "9bb84c74-6f52-4a82-bbad-9675c59447fe",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSave\\sprSave.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3b844553-05b6-447f-b00c-71a0854ec1d0",
+            "Value": {
+                "id": "71037d3f-1d7e-430c-873a-4f38ed24a9a8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSecretItem\\sprSecretItem.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4c0f4727-c2f9-465f-a781-f7f2b273285e",
+            "Value": {
+                "id": "fc7e863e-c1e9-41b5-8814-5a5b7ab8d72c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprBossItem\\sprBossItem.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "683a11db-91ce-4d2b-bf9c-ae4b9e5d34e9",
+            "Value": {
+                "id": "d77bd266-8343-4b51-b2a7-bd62a42caf62",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\\683a11db-91ce-4d2b-bf9c-ae4b9e5d34e9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "14a325a1-6687-42b4-83eb-829746d8fd31",
+            "Value": {
+                "id": "c8a0a369-d46c-405b-8d08-f753e12e9619",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "tilesets\\tAllTiles\\tAllTiles.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "73bc25c9-5d7f-4723-b81b-c77a6548b82d",
+            "Value": {
+                "id": "f60697b6-c749-44f0-b801-026a617002c8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprAllTiles\\sprAllTiles.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "room_order": [

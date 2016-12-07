@@ -1,7 +1,7 @@
 {
     "id": "81944ed4-e143-4617-8842-7a244c1666d7",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.1",
     "name": "sprMiniSpikeDown",
     "For3D": false,
     "HTile": false,
