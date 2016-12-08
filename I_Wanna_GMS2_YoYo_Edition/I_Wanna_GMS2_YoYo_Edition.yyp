@@ -1578,6 +1578,25 @@
             }
         },
         {
+            "Key": "86be46c7-232c-4da9-b74f-b0784526746b",
+            "Value": {
+                "id": "c7b1b51d-8ea5-425c-b847-7fe31215cd34",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprWalljumpR\\sprWalljumpR.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "73bc25c9-5d7f-4723-b81b-c77a6548b82d",
             "Value": {
                 "id": "f60697b6-c749-44f0-b801-026a617002c8",
@@ -1593,6 +1612,120 @@
                     "default"
                 ],
                 "resourcePath": "sprites\\sprAllTiles\\sprAllTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2ca71dcc-5c8f-42ca-a5e5-4f3489a09718",
+            "Value": {
+                "id": "c023222c-c6da-4b99-9704-33767cd59a04",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprWater\\sprWater.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89841e40-461c-4323-90c9-3c1e97e8a9c4",
+            "Value": {
+                "id": "7686fe5e-b90c-440a-9bd1-1df9a7203ced",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprWalljumpL\\sprWalljumpL.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a6310c02-0b20-4967-9dfb-3bfbdac2129d",
+            "Value": {
+                "id": "53682c47-d567-4b3b-a12b-ace7279290d2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprJumpRefresher\\sprJumpRefresher.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5d8400ed-979b-41b8-8610-bd1ff7c09f71",
+            "Value": {
+                "id": "ab8200a5-fa63-4975-ac47-891b4c556c7d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSign\\sprSign.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "74724649-a21e-4bb5-8280-d19c6ea3b5b8",
+            "Value": {
+                "id": "62248a75-7282-4694-8781-080227220c60",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprGravityUp\\sprGravityUp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c52b9f4e-8536-45b5-8e92-9f2198bc8991",
+            "Value": {
+                "id": "cb06c5b1-cfdf-43c4-85ea-516c5d28f562",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprGravityDown\\sprGravityDown.yy",
                 "resourceType": "GMSprite"
             }
         }

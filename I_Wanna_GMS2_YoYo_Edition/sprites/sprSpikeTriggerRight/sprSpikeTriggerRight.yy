@@ -1,7 +1,7 @@
 {
     "id": "1782d0ec-a3af-4056-aa45-195a8f29a2c9",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.1",
     "name": "sprSpikeTriggerRight",
     "For3D": false,
     "HTile": false,

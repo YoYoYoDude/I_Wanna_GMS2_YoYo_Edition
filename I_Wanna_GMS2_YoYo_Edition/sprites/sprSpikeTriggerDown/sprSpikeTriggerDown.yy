@@ -1,7 +1,7 @@
 {
     "id": "d5adbba7-52f2-47dd-a90e-1487b855bd61",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.1",
     "name": "sprSpikeTriggerDown",
     "For3D": false,
     "HTile": false,

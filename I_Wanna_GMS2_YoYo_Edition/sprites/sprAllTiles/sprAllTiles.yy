@@ -1,7 +1,7 @@
 {
     "id": "73bc25c9-5d7f-4723-b81b-c77a6548b82d",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.1",
     "name": "sprAllTiles",
     "For3D": false,
     "HTile": false,
