@@ -1,3 +1,4 @@
+/// scrSetGlobalOptions()
 /// Sets configurable global game options
 
 global.debugMode = false; // Enables debug keys (check objWorld step event to see all of them), make sure to set this to "false" before releasing your game

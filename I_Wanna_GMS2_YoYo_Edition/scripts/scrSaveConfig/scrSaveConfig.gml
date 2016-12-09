@@ -1,3 +1,4 @@
+/// scrSaveConfig()
 /// Saves current config settings
 
 ini_open("config.ini");
