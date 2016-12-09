@@ -53,7 +53,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rInit\\rInit.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1728,13 +1728,130 @@
                 "resourcePath": "sprites\\sprGravityDown\\sprGravityDown.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "c8226a3b-2f72-4fee-a231-41bf1bb192b7",
+            "Value": {
+                "id": "0f518632-4cdd-45b3-b921-30795c68dc2d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objWorld\\objWorld.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "af59747c-6f2c-4ec6-a4e4-95fd0a4773d0",
+            "Value": {
+                "id": "58484d3a-c396-4f4d-b7b9-4886675989ed",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrInitializeGlobals\\scrInitializeGlobals.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c2981b29-dc08-4b7b-9b2b-41c88082a59c",
+            "Value": {
+                "id": "cbac137c-716b-4d89-b7d6-2d754b427f46",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrLoadConfig\\scrLoadConfig.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c8269e03-9716-4d3b-9944-52933f0ee56d",
+            "Value": {
+                "id": "76924303-5422-45ff-86c1-d93d2f368eb2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\\c8269e03-9716-4d3b-9944-52933f0ee56d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "38350e1f-3f66-4c1b-8804-9f957c9b81a5",
+            "Value": {
+                "id": "f501bda8-da39-4edb-b642-bab79f0583a0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrSetGlobalOptions\\scrSetGlobalOptions.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "decef4e8-363d-4bda-baf7-7c812b41747d",
+            "Value": {
+                "id": "818562c1-4deb-459e-b737-b4036cd0dea1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrSaveConfig\\scrSaveConfig.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "room_order": [
         "0f267b43-5723-4652-8f88-cc8367a28078"
     ],
     "script_order": [
-        
+        "af59747c-6f2c-4ec6-a4e4-95fd0a4773d0",
+        "38350e1f-3f66-4c1b-8804-9f957c9b81a5",
+        "c2981b29-dc08-4b7b-9b2b-41c88082a59c",
+        "decef4e8-363d-4bda-baf7-7c812b41747d"
     ],
     "tutorial": ""
 }
