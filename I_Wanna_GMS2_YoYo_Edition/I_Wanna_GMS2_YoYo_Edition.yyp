@@ -1842,6 +1842,44 @@
                 "resourcePath": "scripts\\scrSaveConfig\\scrSaveConfig.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "31682e79-2e65-4034-b025-2e57611c300f",
+            "Value": {
+                "id": "dda2339f-d0a4-4208-98bc-39b9512dea0a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\\31682e79-2e65-4034-b025-2e57611c300f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6c7ada7c-d13b-4201-b12b-3cdf51155606",
+            "Value": {
+                "id": "7b9c38c0-cc10-4649-8852-947f83e5f099",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\\6c7ada7c-d13b-4201-b12b-3cdf51155606.yy",
+                "resourceType": "GMFolder"
+            }
         }
     ],
     "room_order": [

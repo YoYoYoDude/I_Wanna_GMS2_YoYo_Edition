@@ -73,4 +73,4 @@ if (global.controllerEnabled)
 
 ini_close();
 
-scrSaveConfig(); //Save the current config settings
+scrSaveConfig(); // Save the current config settings
