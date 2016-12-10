@@ -1,4 +1,4 @@
-/// scrInitializeGlobals()
+/// @description scrInitializeGlobals()
 /// Initializes all global variables needed for the game
 
 scrSetGlobalOptions(); // Initialize global game options

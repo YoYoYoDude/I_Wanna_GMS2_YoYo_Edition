@@ -1,4 +1,4 @@
-/// scrLoadConfig()
+/// @description scrLoadConfig()
 /// Loads config settings, sets default config if it doesn't exist
 
 ini_open("config.ini");
@@ -44,8 +44,7 @@ global.menuAcceptButton[0] = vk_shift;
 global.menuBackButton[0] = ord("Z");
 global.menuOptionsButton[0] = vk_enter;
 
-if (global.controllerEnabled)
-{
+if (global.controllerEnabled) {
     // Controller options/controls
     global.controllerIndex = ini_read_real("controller", "index", -1); // -1 sets no controller
     global.leftButton[1] = ini_read_real("controller","left",gp_padl);

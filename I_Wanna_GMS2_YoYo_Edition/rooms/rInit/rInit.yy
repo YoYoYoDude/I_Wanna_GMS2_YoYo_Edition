@@ -60,83 +60,11 @@
             ]
         },
         {
-            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "id": "b910e84f-08fd-46bb-8481-b0130e61faa6",
-            "modelName": "GMRInstanceLayer",
-            "mvc": "1.0",
-            "depth": 100,
-            "hierarchyFrozen": false,
-            "hierarchyVisible": true,
-            "inheritLayerDepth": false,
-            "inheritLayerSettings": false,
-            "inheritSubLayers": false,
-            "inheritVisibility": false,
-            "layers": [
-                
-            ],
-            "m_parentID": "00000000-0000-0000-0000-000000000000",
-            "m_serialiseFrozen": false,
-            "name": "Above_player",
-            "userdefined_depth": false,
-            "visible": true,
-            "instances": [
-                
-            ]
-        },
-        {
-            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "id": "aef0b25d-54f5-40c0-b8db-3e891387fb4c",
-            "modelName": "GMRInstanceLayer",
-            "mvc": "1.0",
-            "depth": 200,
-            "hierarchyFrozen": false,
-            "hierarchyVisible": true,
-            "inheritLayerDepth": false,
-            "inheritLayerSettings": false,
-            "inheritSubLayers": false,
-            "inheritVisibility": false,
-            "layers": [
-                
-            ],
-            "m_parentID": "00000000-0000-0000-0000-000000000000",
-            "m_serialiseFrozen": false,
-            "name": "Player",
-            "userdefined_depth": false,
-            "visible": true,
-            "instances": [
-                
-            ]
-        },
-        {
-            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "id": "4f513166-97f5-4ea5-9a5d-f409301fcd4c",
-            "modelName": "GMRInstanceLayer",
-            "mvc": "1.0",
-            "depth": 300,
-            "hierarchyFrozen": false,
-            "hierarchyVisible": true,
-            "inheritLayerDepth": false,
-            "inheritLayerSettings": false,
-            "inheritSubLayers": false,
-            "inheritVisibility": false,
-            "layers": [
-                
-            ],
-            "m_parentID": "00000000-0000-0000-0000-000000000000",
-            "m_serialiseFrozen": false,
-            "name": "Below_player",
-            "userdefined_depth": false,
-            "visible": true,
-            "instances": [
-                
-            ]
-        },
-        {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
             "id": "a5ba60a0-2583-43d6-8ec9-ae4952971464",
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "depth": 400,
+            "depth": 100,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -191,8 +119,8 @@
         "id": "1257aecd-c09f-4a07-8fb9-a9e48e94e55f",
         "modelName": "GMRoomViewSettings",
         "mvc": "1.0",
-        "clearDisplayBuffer": false,
-        "clearViewBackground": false,
+        "clearDisplayBuffer": true,
+        "clearViewBackground": true,
         "enableViews": true,
         "inheritViewSettings": false
     },
