@@ -15,36 +15,16 @@ global.savePlayerY = 0;
 global.grav = 1;
 global.saveGrav = 1;
 
-//TODO: check if there's a better way of initializing arrays in GMS2
-
 global.secretItem = array_create(SECRET_ITEM_TOTAL,false);
 global.saveSecretItem = array_create(SECRET_ITEM_TOTAL,false);
 
 global.bossItem = array_create(BOSS_ITEM_TOTAL,false);
 global.saveBossItem = array_create(BOSS_ITEM_TOTAL,false);
 
-/*
-for (var i = SECRET_ITEM_TOTAL-1; i >= 0; i--) {
-    global.secretItem[i] = false;
-    global.saveSecretItem[i] = false;
-}
-
-for (var i = BOSS_ITEM_TOTAL-1; i >= 0; i--) {
-    global.bossItem[i] = false;
-    global.saveBossItem[i] = false;
-}
-*/
-
 global.gameClear = false;
 global.saveGameClear = false;
 
 global.trigger = array_create(100,false);
-
-/*
-for (var i = 99; i >= 0; i--) {
-    global.trigger[i] = false;
-}
-*/
 
 global.gameStarted = false; // Determines whether the game is currently in progress (enables saving, restarting, etc.)
 global.noPause = false; // Sets whether or not to allow pausing (useful for bosses to prevent desync)

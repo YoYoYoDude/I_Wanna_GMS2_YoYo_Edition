@@ -3267,6 +3267,310 @@
                 "resourcePath": "objects\\objSave\\objSave.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "fe7febd9-5c80-47d3-ac11-65ff6007570f",
+            "Value": {
+                "id": "758555f1-707d-4f97-bdd9-ef7193ed23d9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprMetalBlock\\sprMetalBlock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a456f725-1539-4472-853e-672adb978801",
+            "Value": {
+                "id": "85e77a42-f550-40c5-94b0-651082e39f4f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objKillerBlock\\objKillerBlock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c8a17529-8a0f-41bf-b115-7b824ccfc94a",
+            "Value": {
+                "id": "90b33915-5ca3-42cc-9918-499908802b1e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objBlockInvis\\objBlockInvis.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "39993915-fd1a-4179-888b-389b8ed58c4f",
+            "Value": {
+                "id": "4eea2497-c397-45d8-902e-64dd8bfce12d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objBlockFake\\objBlockFake.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "27af3204-5ba2-4e76-85ff-1defbcb830ca",
+            "Value": {
+                "id": "08f6b8d0-066c-489d-a9a7-b16b5345121f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objFreeTrigger\\objFreeTrigger.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "853c47be-23f0-4959-a6b4-2eede17c7ecc",
+            "Value": {
+                "id": "4219b542-5917-42c8-80b6-ce2d01594581",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objTriggerButton\\objTriggerButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "efedb78d-b718-44a6-9f13-40b6615c508d",
+            "Value": {
+                "id": "702f6706-a46c-4742-ab5c-d171d2ba3fd5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objKillerTrigger\\objKillerTrigger.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "29fc0881-f8e6-4e23-8ebe-e3ffc0e7a665",
+            "Value": {
+                "id": "7b9fc235-634e-4118-a501-55c47133f0df",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSpikeTriggerUp\\objSpikeTriggerUp.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bae9a3d4-7059-4943-b5d8-d53aa7e2b05a",
+            "Value": {
+                "id": "5e3c5552-f41d-4932-9487-89c401860bd3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSpikeTriggerRight\\objSpikeTriggerRight.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1a7eb2d4-0043-4776-a966-63cdb772cd03",
+            "Value": {
+                "id": "843fa0a6-8e92-4295-8ec7-9ef4953a174d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSpikeTriggerLeft\\objSpikeTriggerLeft.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5af8a4e7-a5ce-427c-a7c4-f91577ae2529",
+            "Value": {
+                "id": "b2568c66-9df4-447e-b5c2-639dc771adb9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSpikeTriggerDown\\objSpikeTriggerDown.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "348993ad-8c11-4b74-9159-493f19d13fba",
+            "Value": {
+                "id": "b178864e-5aa8-4ab4-b57d-b95e8c28d125",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objCherryTrigger\\objCherryTrigger.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c97ccb9c-20c0-4330-ba93-ca16a145b470",
+            "Value": {
+                "id": "5510c9b0-d28d-4d71-b23c-5903a06168bc",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objJumpRefresher\\objJumpRefresher.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "70363824-dce5-4c1f-80f8-9192b94f805e",
+            "Value": {
+                "id": "4b070979-33e4-4260-99a8-208448e7bfc7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSign\\objSign.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bd51d073-f405-4ce1-a86e-a119d762cecc",
+            "Value": {
+                "id": "2eb128b2-c005-4d48-aa6c-a152d7874fde",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objGravityUp\\objGravityUp.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f395a6e9-8aaa-437e-bf96-bb5ad2eae312",
+            "Value": {
+                "id": "dc11785e-9f07-4b58-adff-e15ae807fdf3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objGravityDown\\objGravityDown.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "room_order": [

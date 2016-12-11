@@ -3,8 +3,10 @@
 // Draw debug overlay
 if (global.debugOverlay) {
     draw_set_color(c_black);
-    draw_set_halign(fa_left);
+	//TODO: make a script to set these font variables?
     draw_set_font(fDefault12);
+    draw_set_halign(fa_left);
+	draw_set_valign(fa_middle);
     
     var drawX = 0, drawY = 0, drawAlign = 0;
     if (instance_exists(objPlayer)) {
