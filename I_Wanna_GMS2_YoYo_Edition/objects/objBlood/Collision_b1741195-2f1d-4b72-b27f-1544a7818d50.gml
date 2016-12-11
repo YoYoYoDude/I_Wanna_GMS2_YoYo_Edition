@@ -1,3 +1,3 @@
 /// @description Go through platforms
 
-// Do nothing to overwrite parented objBlock collision event
+// Do nothing, this is here to overwrite parented objBlock collision event

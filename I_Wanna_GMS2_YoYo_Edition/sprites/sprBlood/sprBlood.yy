@@ -11,8 +11,8 @@
     "bbox_right": 2,
     "bbox_top": 1,
     "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
+    "colkind": 0,
+    "coltolerance": 32,
     "frames": [
         {
             "id": "72129233-4345-489f-9f6b-7a58d6711c0f",
@@ -97,7 +97,7 @@
     ],
     "playbackSpeed": 0,
     "playbackSpeedType": 0,
-    "sepmasks": false,
+    "sepmasks": true,
     "swatchColours": null,
     "textureGroup": 0,
     "type": 0,

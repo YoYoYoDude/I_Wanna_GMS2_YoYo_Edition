@@ -16,33 +16,8 @@ if (!frozen) { // Don't move if frozen
 // Check if near a slip block
 var slipBlockTouching = instance_place(x,y+(global.grav),objSlipBlock);
 
-// Vine checks
-var notOnBlock = (place_free(x,y+(global.grav)));
-var onVineL = (place_meeting(x-1,y,objWalljumpL) && notOnBlock);
-var onVineR = (place_meeting(x+1,y,objWalljumpR) && notOnBlock);
-
 if (h != 0) { // Player is moving
-    //TODO: is this needed?
-	/*
-	if (!onVineR && !onVineL) { // Set the direction the player is facing if not currently touching a vine
-        xScale = h;
-    }
-	
-    if ((h == -1 && !onVineR) || (h == 1 && !onVineL)) {
-        if (slipBlockTouching == noone) //not touching a slip block, move immediately at full speed
-            hspeed = maxSpeed * h;
-        else    //touching a slip block, use acceleration
-        {
-            if ((h == 1 && hspeed < maxSpeed) || (h == -1 && hspeed > -maxSpeed))
-                hspeed += (slipBlockTouching.slip) * h;
-        }
-        
-        sprite_index = sprPlayerRunning;
-        image_speed = 0.5;
-    }
-	*/
-	
-	xScale = h;
+	xScale = h; // Set the direction the player is facing
 	
     if (slipBlockTouching == noone) { // Not touching a slip block, move immediately at full speed
         hspeed = maxSpeed * h;
@@ -86,14 +61,15 @@ if (!onPlatform) {
 		onPlatform = false;
 }
 
-var slideBlockTouching = instance_place(x,y+(global.grav),objSlideBlock); // Check if on a slide block
+// Check if on a slide block
+var slideBlockTouching = instance_place(x,y+(global.grav),objSlideBlock);
 
 if (slideBlockTouching != noone) // On a slide block, start moving with it
     hspeed += slideBlockTouching.slide;
 
 // Check if moving faster vertically than max speed
 if (abs(vspeed) > maxVspeed)
-	vspeed = sign(vspeed)*maxVspeed;
+	vspeed = sign(vspeed) * maxVspeed;
 
 // Check buttons for player actions
 if (!frozen) { // Check if frozen before doing anything
@@ -115,6 +91,11 @@ if (global.adAlign && place_meeting(x,y+(global.grav),objBlock) && !frozen) {
 		hspeed += 1;
 }
 
+// Vine checks
+var notOnBlock = (place_free(x,y+(global.grav)));
+var onVineL = (place_meeting(x-1,y,objWalljumpL) && notOnBlock);
+var onVineR = (place_meeting(x+1,y,objWalljumpR) && notOnBlock);
+
 // Handle walljumps
 if (onVineL || onVineR) {
     if (onVineR)
@@ -126,9 +107,7 @@ if (onVineL || onVineR) {
     sprite_index = sprPlayerSlide;
     
     // Check if moving away from the vine
-	//TODO: maybe rework logic to not require checking if pressed?
-    //TODO: fix bug where you can walk-off holding shift and jump off the vine
-	if (onVineL && R) || (onVineR && L) {
+	if (onVineL && scrButtonCheckPressed(global.rightButton)) || (onVineR && scrButtonCheckPressed(global.leftButton)) {
         if (scrButtonCheck(global.jumpButton)) { // Jumping off vine
             if (onVineR)
                 hspeed = -15;
@@ -139,13 +118,10 @@ if (onVineL || onVineR) {
             audio_play_sound(sndWallJump,0,false);
             sprite_index = sprPlayerJump;
         } else { // Moving off vine
-            //TODO: do we need this?
-			/*
 			if (onVineR)
                 hspeed = -3;
             else
                 hspeed = 3;
-			*/
             
             sprite_index = sprPlayerFall;
         }
