@@ -73,13 +73,13 @@
             "visible": true
         }
     ],
-    "playbackSpeed": 15,
+    "playbackSpeed": 50,
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,
     "textureGroup": 0,
     "type": 0,
     "width": 4,
-    "xorig": 2,
-    "yorig": 2
+    "xorig": 1,
+    "yorig": 1
 }

@@ -2,7 +2,7 @@
     "id": "d7ea4b39-4e7c-4143-853d-e177eb27f153",
     "modelName": "GMSprite",
     "mvc": "1.1",
-    "name": "sprMiniBlock",
+    "name": "sprMiniBlockMask",
     "For3D": false,
     "HTile": false,
     "VTile": false,

@@ -12,6 +12,9 @@ if (instance_exists(objPlayer)) {
         image_yscale = -1;
         y += 1; // Need to draw the sprite a pixel off when flipped
     }
+	
+	//TODO: maybe set to the player's layer here
+	//layer = objPlayer.layer;
 } else {
     instance_destroy();
 }

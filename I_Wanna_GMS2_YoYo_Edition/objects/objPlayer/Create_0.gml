@@ -20,7 +20,7 @@ xScale = 1; // Sets the direction the player is facing (1 is facing right, -1 is
 
 // Create the player's bow
 if (global.difficulty == 0 && global.gameStarted)
-    instance_create_layer(x,y,"Player",objBow);
+    instance_create_layer(x,y,layer,objBow);
 
 // Save the game if currently set to autosave
 if (global.autosave) {

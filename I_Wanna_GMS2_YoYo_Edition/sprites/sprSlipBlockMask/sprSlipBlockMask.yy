@@ -2,7 +2,7 @@
     "id": "a1a76abb-a822-40c3-ad54-0cc29425f42a",
     "modelName": "GMSprite",
     "mvc": "1.1",
-    "name": "sprSlipBlock",
+    "name": "sprSlipBlockMask",
     "For3D": false,
     "HTile": false,
     "VTile": false,
