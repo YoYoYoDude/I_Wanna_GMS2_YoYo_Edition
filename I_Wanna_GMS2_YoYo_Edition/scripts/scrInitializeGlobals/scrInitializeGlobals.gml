@@ -17,19 +17,19 @@ global.saveGrav = 1;
 
 //TODO: check if there's a better way of initializing arrays in GMS2
 
-global.secretItem = array_create(global.secretItemTotal,false);
-global.saveSecretItem = array_create(global.secretItemTotal,false);
+global.secretItem = array_create(SECRET_ITEM_TOTAL,false);
+global.saveSecretItem = array_create(SECRET_ITEM_TOTAL,false);
 
-global.bossItem = array_create(global.bossItemTotal,false);
-global.saveBossItem = array_create(global.bossItemTotal,false);
+global.bossItem = array_create(BOSS_ITEM_TOTAL,false);
+global.saveBossItem = array_create(BOSS_ITEM_TOTAL,false);
 
 /*
-for (var i = global.secretItemTotal-1; i >= 0; i--) {
+for (var i = SECRET_ITEM_TOTAL-1; i >= 0; i--) {
     global.secretItem[i] = false;
     global.saveSecretItem[i] = false;
 }
 
-for (var i = global.bossItemTotal-1; i >= 0; i--) {
+for (var i = BOSS_ITEM_TOTAL-1; i >= 0; i--) {
     global.bossItem[i] = false;
     global.saveBossItem[i] = false;
 }

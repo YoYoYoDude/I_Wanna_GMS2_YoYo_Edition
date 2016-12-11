@@ -32,11 +32,11 @@ if (savePosition) {
     global.savePlayerY = floor(global.savePlayerY);
     
 	//TODO: check if there's a better way of copying these
-    for (var i = 0; i < global.secretItemTotal; i++) {
+    for (var i = 0; i < SECRET_ITEM_TOTAL; i++) {
         global.saveSecretItem[i] = global.secretItem[i];
     }
     
-    for (var i = 0; i < global.bossItemTotal; i++) {
+    for (var i = 0; i < BOSS_ITEM_TOTAL; i++) {
         global.saveBossItem[i] = global.bossItem[i];
     }
     
@@ -56,18 +56,18 @@ ds_map_add(saveMap,"savePlayerX",global.savePlayerX);
 ds_map_add(saveMap,"savePlayerY",global.savePlayerY);
 ds_map_add(saveMap,"saveGrav",global.saveGrav);
 
-for (var i = 0; i < global.secretItemTotal; i++) {
+for (var i = 0; i < SECRET_ITEM_TOTAL; i++) {
     ds_map_add(saveMap,"saveSecretItem["+string(i)+"]",global.saveSecretItem[i]);
 }
 
-for (var i = 0; i < global.bossItemTotal; i++) {
+for (var i = 0; i < BOSS_ITEM_TOTAL; i++) {
     ds_map_add(saveMap,"saveBossItem["+string(i)+"]",global.saveBossItem[i]);
 }
 
 ds_map_add(saveMap,"saveGameClear",global.saveGameClear);
 
 // Add MD5 hash to verify saves and make them harder to hack
-ds_map_add(saveMap,"mapMd5",md5_string_unicode(ds_map_write(saveMap)+global.md5StrAdd));
+ds_map_add(saveMap,"mapMd5",md5_string_unicode(ds_map_write(saveMap)+MD5_STR_ADD));
 
 // Save the map to a file
 

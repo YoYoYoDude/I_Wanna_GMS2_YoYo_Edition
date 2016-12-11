@@ -24,7 +24,7 @@ ini_write_real("controls","pause",global.pauseButton[0]);
 ini_write_real("controls","align_left",global.alignLeftButton[0]);
 ini_write_real("controls","align_right",global.alignRightButton[0]);
 
-if (global.controllerEnabled) {
+if (CONTROLLER_ENABLED) {
     // Controller options/controls
     ini_write_real("controller","index",global.controllerIndex);
     ini_write_real("controller","left",global.leftButton[1]);

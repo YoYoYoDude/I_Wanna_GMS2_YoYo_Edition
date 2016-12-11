@@ -7,7 +7,7 @@
 //TODO: controller checks
 /*
 //controller checks
-if (global.controllerEnabled && global.controllerIndex != -1)
+if (CONTROLLER_ENABLED && global.controllerIndex != -1)
 {
     if (!global.controllerMode)  //check if we should to controller mode
     {
@@ -18,7 +18,7 @@ if (global.controllerEnabled && global.controllerIndex != -1)
         else if (scrAnyControllerButton() != -1)
         {
             if (global.controllerDelay == -1)
-                global.controllerDelay = global.controllerDelayLength;
+                global.controllerDelay = CONTROLLER_DELAY_LENGTH;
         }
     }
     else    //check if we should switch to keyboard mode
@@ -26,7 +26,7 @@ if (global.controllerEnabled && global.controllerIndex != -1)
         if (keyboard_check_pressed(vk_anykey))
         {
             if (global.controllerDelay == -1)
-                global.controllerDelay = global.controllerDelayLength;
+                global.controllerDelay = CONTROLLER_DELAY_LENGTH;
         }
         else if (scrAnyControllerButton() != -1)
         {
@@ -62,7 +62,7 @@ if (global.gameStarted) {
                 if (!global.noPause)
                 {
                     global.gamePaused = true;  //set the game to paused
-                    global.pauseDelay = global.pauseDelayLength; //set pause delay
+                    global.pauseDelay = PAUSE_DELAY_LENGTH; //set pause delay
                     
                     instance_deactivate_all(true);  //deactivate everything
                     
@@ -73,7 +73,7 @@ if (global.gameStarted) {
             else    //game currently paused, unpause the game
             {
                 global.gamePaused = false;  //set the game to unpaused
-                global.pauseDelay = global.pauseDelayLength;     //set pause delay
+                global.pauseDelay = PAUSE_DELAY_LENGTH;     //set pause delay
                 
                 instance_activate_all();    //reactivate objects
                 
@@ -114,7 +114,7 @@ if (global.gameStarted) {
         }
         
 		// Increment timer
-        if (global.timeWhenDead || instance_exists(objPlayer)) {
+        if (TIME_WHEN_DEAD || instance_exists(objPlayer)) {
             global.timeMicro += delta_time;
             global.time += global.timeMicro div 1000000;
             global.timeMicro = global.timeMicro mod 1000000;

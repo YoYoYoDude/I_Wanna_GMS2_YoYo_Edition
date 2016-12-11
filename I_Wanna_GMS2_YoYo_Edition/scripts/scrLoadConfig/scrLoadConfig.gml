@@ -44,7 +44,7 @@ global.menuAcceptButton[0] = vk_shift;
 global.menuBackButton[0] = ord("Z");
 global.menuOptionsButton[0] = vk_enter;
 
-if (global.controllerEnabled) {
+if (CONTROLLER_ENABLED) {
     // Controller options/controls
     global.controllerIndex = ini_read_real("controller", "index", -1); // -1 sets no controller
     global.leftButton[1] = ini_read_real("controller","left",gp_padl);
