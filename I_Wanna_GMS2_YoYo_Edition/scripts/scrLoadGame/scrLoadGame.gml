@@ -18,7 +18,7 @@ if (loadFile) {
     var saveValid = true; // Keeps track of whether or not the save being loaded is valid
     
     if (saveMap != -1) { // Check if the save map loaded correctly
-        global.death = ds_map_find_value(saveMap,"death");
+        global.deaths = ds_map_find_value(saveMap,"deaths");
         global.time = ds_map_find_value(saveMap,"time");
         global.timeMicro = ds_map_find_value(saveMap,"timeMicro");
         

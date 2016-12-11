@@ -6,7 +6,7 @@ scrSetGlobalOptions(); // Initialize global game options
 // Initialize basic game variables
 global.saveNum = 1;
 global.difficulty = 0; // 0 = medium, 1 = hard, 2 = very hard, 3 = impossible
-global.death = 0;
+global.deaths = 0;
 global.time = 0;
 global.timeMicro = 0;
 global.saveRoom = "";

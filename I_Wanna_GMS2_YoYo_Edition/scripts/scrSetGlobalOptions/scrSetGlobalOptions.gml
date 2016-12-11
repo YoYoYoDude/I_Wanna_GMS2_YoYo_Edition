@@ -1,7 +1,8 @@
 /// @description scrSetGlobalOptions()
 /// Sets configurable global game options
 
-global.debugMode = false; // Enables debug keys (check objWorld step event to see all of them), make sure to set this to "false" before releasing your game
+//TODO: disable debug mode
+global.debugMode = true; // Enables debug keys (check objWorld step event to see all of them), make sure to set this to "false" before releasing your game
 global.debugVisuals = true; // Enables changing the color/alpha of the player when inf jump/god mode are toggled, make sure to disable this if you want to change the player's image_alpha or image_blend
 global.debugOverlay = false; // Enables showing the debug text overlay (shows player location, align, etc.)
 global.godMode = false; // Enables god mode (toggle with Home key)
@@ -26,8 +27,6 @@ global.adAlign = false; // Sets whether or not to enable A/D align
 global.timeWhenDead = true; // Sets whether or not to count the in-game timer when the player is dead
 global.edgeDeath = true; // Sets whether to kill the player when he leaves the boundaries of the room
 global.pauseDelayLength = 40; // Sets the delay in frames in which the player can pause/unpause the game to prevent pause buffer strats (can be set to 0 to disable pause delay)
-//TODO: remove this option
-//global.delayBow = false; // Sets whether to delay the player bow's movement by a frame or not (most engines have the bow lagging behind the player by a frame, so set this to "true" to make the bow look like it does in other engines)
 global.directionalTapFix = false; // Sets whether to change the behavior of tapping left/right for less than 1 frame (by default the player does not move when this happens, enabling this always moves the player for 1 frame when left/right is tapped)
 
 global.secretItemTotal = 8; // Sets how many secret items for the game to save/load
@@ -36,6 +35,3 @@ global.autosaveSecretItems = false; // Sets whether to save secret items immedia
 
 global.controllerEnabled = true; // Sets whether controllers are supported
 global.controllerDelayLength = 5; // Sets the delay in frames in which the player can switch between keyboard/controller (can be set to 0 to disable delay)
-
-//TODO: remove this option
-//global.extraSaveProtection = false; //sets whether to use the ds_map_secure functions for saving/loading (improves save security and prevents transferring between PCs)

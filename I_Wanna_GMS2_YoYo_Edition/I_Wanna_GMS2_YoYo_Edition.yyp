@@ -2792,6 +2792,215 @@
                 "resourcePath": "sounds\\sndWallJump\\sndWallJump.yy",
                 "resourceType": "GMSound"
             }
+        },
+        {
+            "Key": "27784efe-0812-493c-a685-79e7610b56a6",
+            "Value": {
+                "id": "12cd7e74-40f1-4447-83f3-8d6482c97c55",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\\sndDeath\\sndDeath.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "2c604fa0-8932-4488-a3a8-8464b71e0407",
+            "Value": {
+                "id": "755e51e9-d9c4-4221-8d8c-5101ebf4d79d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\\sndItem\\sndItem.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "98ec2258-d5f7-4727-8dd4-d0576b7d2522",
+            "Value": {
+                "id": "c3c65ba0-3466-4439-a440-5ea894d16a7d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\\sndBlockChange\\sndBlockChange.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "24d6a5a1-21a9-4f7b-9ae9-23ecfbf0e519",
+            "Value": {
+                "id": "a599c90b-3278-41b2-894f-a1133a430c9a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\\sndBossHit\\sndBossHit.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "d5c8b04d-c1f8-408c-8c79-268701602a39",
+            "Value": {
+                "id": "1a3639dd-746c-4c16-98fb-a984fee1b329",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\\sndCherry\\sndCherry.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "fe384b7a-6f86-42d1-be5d-1a8650aebf54",
+            "Value": {
+                "id": "ea8b5444-9f5b-436f-a3e0-cfac1a0777e3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\\sndGlass\\sndGlass.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "ac90c3f2-0659-425a-9f75-5f9c42b4f203",
+            "Value": {
+                "id": "d41dbbde-50a2-462a-a307-057ae1faaabb",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\\sndSpikeTrap\\sndSpikeTrap.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "828e8ca8-4482-4c69-9531-82f8abb1a172",
+            "Value": {
+                "id": "d2f7fae4-4081-4d6c-8c4a-217ed64ba70e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objBloodEmitter\\objBloodEmitter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "291c2fb3-bfbf-4fcd-9e4a-d8279e371e61",
+            "Value": {
+                "id": "4c789d48-2452-415b-b17a-08e7b37e93a2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objBlood\\objBlood.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "54a07248-7267-4520-a050-d2ae76fa8730",
+            "Value": {
+                "id": "34afd363-1c2f-4d1c-a23c-f254c5a9049d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objGameOver\\objGameOver.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "256c1fe2-cac8-4016-a23a-76b363ae54c6",
+            "Value": {
+                "id": "c869fe49-bde7-469f-9a18-9b72b2fa85a5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objMiniBlock\\objMiniBlock.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "room_order": [
