@@ -3761,6 +3761,291 @@
                 "resourcePath": "objects\\objGameClear\\objGameClear.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "e2fdca47-5f67-4500-a614-48bfa575696d",
+            "Value": {
+                "id": "2b147cb5-ed70-43f4-824e-6c89ba3920c6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSaveMedium\\sprSaveMedium.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0b83c1b2-f201-4441-9340-ed1bf501f6b2",
+            "Value": {
+                "id": "c72c1c07-5972-4b38-84b5-4d386639a513",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSaveVHard\\sprSaveVHard.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2b7d6f4a-f500-41a1-9b81-c9bcc69aa6b4",
+            "Value": {
+                "id": "d12d8b39-aabb-4653-919e-de979d64bea7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSaveMedium\\objSaveMedium.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "154200b8-4d28-4c74-ba83-59e83cf4a616",
+            "Value": {
+                "id": "93337f5b-6b0e-4b58-9bf6-77dc9617f338",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSaveVHard\\objSaveVHard.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a1bf3b22-3988-4932-88d8-78af249ef498",
+            "Value": {
+                "id": "feaeb112-55a8-461a-a31b-2ca2ff6d87f6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSaveMediumFlip\\sprSaveMediumFlip.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "558f694c-02e9-4869-a55e-8519781b4e65",
+            "Value": {
+                "id": "39ec7c8a-7657-4228-9804-f19dc8bb3b89",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSaveFlip\\sprSaveFlip.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c4c2ffce-668b-488d-8e40-9d41e7a1c653",
+            "Value": {
+                "id": "fbdc7eef-8476-49e0-be87-6c1a86b76e8d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprSaveVHardFlip\\sprSaveVHardFlip.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2b7670d5-d26f-4651-8b26-d0867dbdd655",
+            "Value": {
+                "id": "6ac946d2-7a13-4d0b-b784-ec2459eba82c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSaveMediumFlip\\objSaveMediumFlip.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8399691b-d244-47f5-aa54-3122b7059f62",
+            "Value": {
+                "id": "f9af410b-f7ec-4a3b-b639-89f28f3fa99a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSaveFlip\\objSaveFlip.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d57dc508-6460-4996-a763-cd18a0bfbdbe",
+            "Value": {
+                "id": "019126e0-ec92-4fee-b5fe-2aceb35b32a0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSaveVHardFlip\\objSaveVHardFlip.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "94f20889-8e50-4308-983c-5c833693ed6a",
+            "Value": {
+                "id": "a096cbb9-53d9-457f-9e8f-e08dcc3371d8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSlope\\objSlope.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e4158991-f1ce-428b-a17a-a45853af5880",
+            "Value": {
+                "id": "d272d634-fa31-4c55-8688-41e248161490",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSlopeDownRight\\objSlopeDownRight.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "162e8ac0-7d65-45ac-9b5c-5c886da360c5",
+            "Value": {
+                "id": "b2bf1a33-1826-46ea-9cda-ddad6ba728af",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSlopeDownLeft\\objSlopeDownLeft.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8b656fd9-d38a-4a42-a749-71117c6c42a2",
+            "Value": {
+                "id": "f20912a6-a3fb-417c-8949-af8cf7fdae95",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSlopeUpRight\\objSlopeUpRight.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "adf32ca3-04a1-4370-8f80-4496b2ce5e48",
+            "Value": {
+                "id": "0d16aa1d-bf6b-4ad8-9221-83cb6a2d1906",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSlopeUpLeft\\objSlopeUpLeft.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "room_order": [

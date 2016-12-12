@@ -4,7 +4,7 @@
 var L = (scrButtonCheck(global.leftButton) || (DIRECTIONAL_TAP_FIX && scrButtonCheckPressed(global.leftButton)));
 var R = (scrButtonCheck(global.rightButton) || (DIRECTIONAL_TAP_FIX && scrButtonCheckPressed(global.rightButton)));
 
-var h = 0;
+var h = 0; //Keeps track if the player is moving left/right
 
 if (!frozen) { // Don't move if frozen
     if (R)
@@ -13,19 +13,21 @@ if (!frozen) { // Don't move if frozen
         h = -1;
 }
 
-// Check if near a slip block
+// Check if on a slip block
 var slipBlockTouching = instance_place(x,y+(global.grav),objSlipBlock);
 
 if (h != 0) { // Player is moving
+	//TODO: possibly add vine checks back here, behavior is slightly different without them
+	
 	xScale = h; // Set the direction the player is facing
 	
     if (slipBlockTouching == noone) { // Not touching a slip block, move immediately at full speed
-        hspeed = maxSpeed * h;
+        hspeed = maxHSpeed * h;
     } else { // Touching a slip block, use acceleration
 		hspeed += (slipBlockTouching.slip) * h;
 		
-		if (abs(hspeed) > maxSpeed)
-			hspeed = maxSpeed * h;
+		if (abs(hspeed) > maxHSpeed)
+			hspeed = maxHSpeed * h;
     }
         
     sprite_index = sprPlayerRun;
@@ -69,8 +71,8 @@ if (slideBlockTouching != noone) // On a slide block, start moving with it
     hspeed += slideBlockTouching.slide;
 
 // Check if moving faster vertically than max speed
-if (abs(vspeed) > maxVspeed)
-	vspeed = sign(vspeed) * maxVspeed;
+if (abs(vspeed) > maxVSpeed)
+	vspeed = sign(vspeed) * maxVSpeed;
 
 // Check buttons for player actions
 if (!frozen) { // Check if frozen before doing anything
@@ -129,50 +131,43 @@ if (onVineL || onVineR) {
     }
 }
 
-//TODO: implemement slopes
-/*
-//slopes
 
-if (instance_exists(objSlope) && hspeed != 0)
-{
-    var moveLimit = abs(hspeed);    //sets how high/low the player can go to snap onto a slope, this can be increased to make the player able to run over steeper slopes (ie setting it to abs(hspeed)*2 allows the player to run over slopes twice as steep)
+// Handle slopes
+if (instance_exists(objSlope) && hspeed != 0) { // Make sure slopes exist in the current room and the player is moving horitontally before doing checks
+    var moveLimit = abs(hspeed); // Sets how far the player can go up/down to snap onto a slope, this can be increased to make the player able to run over steeper slopes (ie setting it to abs(hspeed)*2 allows the player to run over slopes twice as steep)
     
-    var slopeCheck;
-    var hTest;
+    var slopeCheck; // Keeps track of whether we're still checking the current slope loop
+    var hTest; // Keeps track of how far horizontally we're currently checking
+    var vTest; // Keeps track of how far vertically we're currently checking
     
-    var ySlope;
-    
-    //falling onto a slope
-    if (place_meeting(x+hspeed,y+vspeed+gravity,objSlope) && (vspeed+gravity)*global.grav > 0 && notOnBlock)
-    {
-        var xLast = x;
+    // Check for falling onto a slope
+    if (place_meeting(x+hspeed,y+vspeed+gravity,objSlope) && (vspeed+gravity)*global.grav > 0 && notOnBlock) {
+        // Store previous coordinates in case snapping onto the slope fails
+		var xLast = x;
         var yLast = y;
         var hLast = hspeed;
         var vLast = vspeed;
+		
+		vspeed += gravity; // Apply gravity to current vspeed to check where the player will be
         
-        vspeed += gravity;
-        
-        x += hspeed;
+        x += hspeed; // Move the player to the next position horizontally
         hspeed = 0;
         
-        if(!place_free(x,y+vspeed))
-        {
-            if (global.grav == 1)   //normal
+		// Snap the player to any solids in the way
+        if (!place_free(x,y+vspeed)) {
+            if (global.grav == 1)
                 move_contact_solid(270,abs(vspeed));
-            else    //flipped
+            else
                 move_contact_solid(90,abs(vspeed));
             vspeed = 0;
         }
         
-        y += vspeed;            
+        y += vspeed; // Move the player to the next position vertically
         
-        if (!place_free(x,y+(global.grav)) && place_free(x,y))  //snapped onto the slope properly
-        {
+        if (!place_free(x,y+(global.grav)) && place_free(x,y)) { // Check if we snapped onto the slope properly
             djump = 1;
             notOnBlock = false;
-        }
-        else    //did not snap onto the slope, return to previous position
-        {
+        } else { // Did not snap onto the slope, return to previous position
             x = xLast;
             y = yLast;
             hspeed = hLast;
@@ -180,112 +175,86 @@ if (instance_exists(objSlope) && hspeed != 0)
         }
     }
     
-    //moving down a slope
-    if (!notOnBlock)
-    {
-        var onSlope = (place_meeting(x,y+(global.grav),objSlope));    //treat normal blocks the same as slopes if we're standing on a slope
+    // Check for moving down a slope
+    if (!notOnBlock) {
+        var onSlope = (place_meeting(x,y+(global.grav),objSlope)); // Check if we're standing on slope, treat normal blocks the same as slopes if we are
         
         slopeCheck = true;
         hTest = hspeed;
         
-        while (slopeCheck)
-        {
-            ySlope = 0;
-            //check how far we should move down
-            while ((!place_meeting(x+hTest,y-ySlope+(global.grav),objSlope) || (onSlope && !place_meeting(x+hTest,y-ySlope+(global.grav),objBlock))) && ySlope*global.grav > -floor(moveLimit*(hTest/hspeed)))
-            {
-                ySlope -= global.grav;
+        while (slopeCheck) {
+            vTest = 0;
+            // Check how far we should move down for this check
+            while ((!place_meeting(x+hTest,y-vTest+(global.grav),objSlope) || (onSlope && !place_meeting(x+hTest,y-vTest+(global.grav),objBlock))) && (vTest*global.grav > -floor(moveLimit*(hTest/hspeed)))) {
+                vTest -= global.grav;
             }
             
-            //check if we actually need to move down
-            if (place_meeting(x+hTest,y-ySlope+(global.grav),objSlope) || (onSlope && place_meeting(x+hTest,y-ySlope+(global.grav),objBlock)))
-            {
-                if (ySlope != 0 && !place_meeting(x+hTest,y-ySlope,objBlock))
-                {
-                    y -= ySlope;
+            // Check if we there's a slope close enough to fall down onto
+            if (place_meeting(x+hTest,y-vTest+(global.grav),objSlope) || (onSlope && place_meeting(x+hTest,y-vTest+(global.grav),objBlock))) {
+                if (vTest != 0 && !place_meeting(x+hTest,y-vTest,objBlock)) { // Check if we are moving and not stuck in any blocks
+                    y -= vTest;
                     
                     x += hTest;
                     hspeed = 0;
                     
                     slopeCheck = false;
-                }
-                else
-                {
-                    if (hTest > 0)
-                    {
+                } else { // Did not snap onto the slope, lower horizontal movement and check again
+                    if (hTest > 0) {
                         hTest -= 1;
                         if (hTest <= 0)
                             slopeCheck = false;
-                    }
-                    else if (hTest < 0)
-                    {
+                    } else if (hTest < 0) {
                         hTest += 1;
                         if (hTest >= 0)
                             slopeCheck = false;
-                    }
-                    else
-                    {
+                    } else {
                         slopeCheck = false;
                     }
                 }
-            }
-            else
-            {
+            } else { //Not close enough to any slopes, cancel check
                 slopeCheck = false;
             }
         }
     }
     
-    //moving up a slope
-    if (place_meeting(x+hspeed,y,objSlope))
-    {
+    // Check for moving up a slope
+    if (place_meeting(x+hspeed,y,objSlope)) {
         slopeCheck = true;
         hTest = hspeed;
         
-        while (slopeCheck)
-        {
-            ySlope = 0;
+        while (slopeCheck) {
+            vTest = 0;
             
-            //check how far we have to move up
-            while (place_meeting(x+hTest,y-ySlope,objSlope) && ySlope*global.grav < floor(moveLimit*(hTest/hspeed)))
-            {
-                ySlope += global.grav;
+            // Check how far we have to move up for this check
+            while (place_meeting(x+hTest,y-vTest,objSlope) && vTest*global.grav < floor(moveLimit*(hTest/hspeed))) {
+                vTest += global.grav;
             }
             
-            //check if we actually need to move up
-            if (place_free(x+hTest,y-ySlope))
-            {            
-                y -= ySlope;
+            // Check if we can move without hitting any solids
+            if (place_free(x+hTest,y-vTest)) {
+                y -= vTest;
                 
                 x += hTest;
                 hspeed = 0;
                 
                 slopeCheck = false;
-            }
-            else
-            {
-                if (hTest > 0)
-                {
+            } else { // Something is in the way, lower horizontal movement and check again
+                if (hTest > 0) {
                     hTest -= 1;
                     if (hTest <= 0)
                         slopeCheck = false;
-                }
-                else if (hTest < 0)
-                {
+                } else if (hTest < 0) {
                     hTest += 1;
                     if (hTest >= 0)
                         slopeCheck = false;
-                }
-                else
-                {
+                } else {
                     slopeCheck = false;
                 }
             }
         }
     }
     
-    //set xprevious/yprevious coordinates for future solid collisions
+    // Set the xprevious/yprevious coordinates to the current x/y for future solid collisions
     xprevious = x;
     yprevious = y;
 }
-*/

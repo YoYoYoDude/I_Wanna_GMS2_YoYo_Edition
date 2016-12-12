@@ -69,6 +69,7 @@ if (loadFile) {
     if (!saveValid) { // Check if the save is invalid
         // Save is invalid, restart the game
 		
+		//TODO: change this to not use show_message?
         show_message("Save invalid!");
 		
 		game_restart();

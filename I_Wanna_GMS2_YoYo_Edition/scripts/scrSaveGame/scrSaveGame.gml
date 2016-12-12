@@ -55,16 +55,6 @@ ds_map_add(saveMap,"saveGrav",global.saveGrav);
 ds_map_add(saveMap,"saveSecretItem",global.saveSecretItem);
 ds_map_add(saveMap,"saveBossItem",global.saveBossItem);
 
-/*
-for (var i = 0; i < SECRET_ITEM_TOTAL; i++) {
-    ds_map_add(saveMap,"saveSecretItem["+string(i)+"]",global.saveSecretItem[i]);
-}
-
-for (var i = 0; i < BOSS_ITEM_TOTAL; i++) {
-    ds_map_add(saveMap,"saveBossItem["+string(i)+"]",global.saveBossItem[i]);
-}
-*/
-
 ds_map_add(saveMap,"saveGameClear",global.saveGameClear);
 
 // Add MD5 hash to verify saves and make them harder to hack
