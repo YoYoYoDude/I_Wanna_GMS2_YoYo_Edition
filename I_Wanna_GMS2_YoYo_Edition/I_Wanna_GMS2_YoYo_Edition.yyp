@@ -4046,6 +4046,82 @@
                 "resourcePath": "objects\\objSlopeUpLeft\\objSlopeUpLeft.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "5a96b791-9f82-4f58-b2dd-5e7f11dafb57",
+            "Value": {
+                "id": "2a576648-39d9-4ca5-be71-700408efb556",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objMovingPlatform\\objMovingPlatform.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1374b94a-adaa-4fe4-a7b3-7c4b212b7cae",
+            "Value": {
+                "id": "28499583-1cc1-4c6a-9bcf-859663c8b62b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objMovingPlatformNoBounce\\objMovingPlatformNoBounce.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "83f855da-62e5-4df7-97db-dd082aec1fae",
+            "Value": {
+                "id": "4f30fffe-7c05-4f2d-a3f1-ae9395c3cbea",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objBlockFall\\objBlockFall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3b1c6185-8422-4462-a0b4-98690aec2396",
+            "Value": {
+                "id": "41e379cc-8909-48dd-b9da-b5fd4873946c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objBlockRise\\objBlockRise.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "room_order": [
