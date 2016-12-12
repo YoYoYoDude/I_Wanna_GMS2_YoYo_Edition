@@ -12,14 +12,19 @@ audio_master_gain(global.volumeLevel/100);
 global.fullscreenMode = ini_read_real("settings","fullscreen_mode",false);
 window_set_fullscreen(global.fullscreenMode);
 
-global.smoothingMode = ini_read_real("settings","smoothing_mode",false);
-
 global.vsyncMode = ini_read_real("settings","vsync_mode",false);
 //TODO: implement vsync
 /*
 if (global.vsyncMode) // Set vsync mode if it's currently on since it's off by default
     scrSetVsync();
 */
+
+//TODO: make sure vsync is over smoothing mode in menus
+
+global.smoothingMode = ini_read_real("settings","smoothing_mode",false);
+//TODO: implement smoothing mode (move it out of objWorld step event)
+
+//TODO: implement option to not update windows caption maybe
 
 // Keyboard controls
 global.leftButton[0] = ini_read_real("controls","left",vk_left);

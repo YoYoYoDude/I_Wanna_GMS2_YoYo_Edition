@@ -31,14 +31,9 @@ if (savePosition) {
     global.savePlayerX = floor(global.savePlayerX);
     global.savePlayerY = floor(global.savePlayerY);
     
-	//TODO: check if there's a better way of copying these
-    for (var i = 0; i < SECRET_ITEM_TOTAL; i++) {
-        global.saveSecretItem[i] = global.secretItem[i];
-    }
-    
-    for (var i = 0; i < BOSS_ITEM_TOTAL; i++) {
-        global.saveBossItem[i] = global.bossItem[i];
-    }
+	//TODO: make sure this works correctly
+	array_copy(global.saveSecretItem,0,global.secretItem,0,SECRET_ITEM_TOTAL);
+	array_copy(global.saveBossItem,0,global.bossItem,0,BOSS_ITEM_TOTAL);
     
     global.saveGameClear = global.gameClear;
 }
@@ -56,6 +51,11 @@ ds_map_add(saveMap,"savePlayerX",global.savePlayerX);
 ds_map_add(saveMap,"savePlayerY",global.savePlayerY);
 ds_map_add(saveMap,"saveGrav",global.saveGrav);
 
+//TODO: make sure this works properly
+ds_map_add(saveMap,"saveSecretItem",global.saveSecretItem);
+ds_map_add(saveMap,"saveBossItem",global.saveBossItem);
+
+/*
 for (var i = 0; i < SECRET_ITEM_TOTAL; i++) {
     ds_map_add(saveMap,"saveSecretItem["+string(i)+"]",global.saveSecretItem[i]);
 }
@@ -63,6 +63,7 @@ for (var i = 0; i < SECRET_ITEM_TOTAL; i++) {
 for (var i = 0; i < BOSS_ITEM_TOTAL; i++) {
     ds_map_add(saveMap,"saveBossItem["+string(i)+"]",global.saveBossItem[i]);
 }
+*/
 
 ds_map_add(saveMap,"saveGameClear",global.saveGameClear);
 

@@ -57,6 +57,7 @@ if (!onPlatform) {
 		sprite_index = sprPlayerFall;
 } else {
 	//TODO: change this to y+1?
+	//TODO: check if onPlatform even works correctly and is needed
     if (!place_meeting(x,y+(4*global.grav),objPlatform))
 		onPlatform = false;
 }

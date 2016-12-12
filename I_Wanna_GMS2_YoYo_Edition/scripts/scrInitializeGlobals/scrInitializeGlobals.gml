@@ -24,7 +24,7 @@ global.saveBossItem = array_create(BOSS_ITEM_TOTAL,false);
 global.gameClear = false;
 global.saveGameClear = false;
 
-global.trigger = array_create(100,false);
+global.trigger = array_create(50,false);
 
 global.gameStarted = false; // Determines whether the game is currently in progress (enables saving, restarting, etc.)
 global.noPause = false; // Sets whether or not to allow pausing (useful for bosses to prevent desync)

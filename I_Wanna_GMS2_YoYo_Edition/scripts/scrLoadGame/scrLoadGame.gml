@@ -35,14 +35,9 @@ if (loadFile) {
             saveValid = false;
         }
         
-		//TODO: check if there's a better way of saving/loading arrays
-        for (var i = 0; i < SECRET_ITEM_TOTAL; i++) {
-            global.saveSecretItem[i] = ds_map_find_value(saveMap,"saveSecretItem["+string(i)+"]");
-        }
-        
-        for (var i = 0; i < BOSS_ITEM_TOTAL; i++) {
-            global.saveBossItem[i] = ds_map_find_value(saveMap,"saveBossItem["+string(i)+"]");
-        }
+		//TODO: make sure this works properly
+		global.saveSecretItem = ds_map_find_value(saveMap,"saveSecretItem");
+		global.saveBossItem = ds_map_find_value(saveMap,"saveBossItem");
         
         global.saveGameClear = ds_map_find_value(saveMap,"saveGameClear");
         
@@ -60,6 +55,9 @@ if (loadFile) {
 		// Check if MD5 hash is invalid
         if (mapMd5 != genMd5)
             saveValid = false;
+		
+		//TODO: remove this
+		show_debug_message(json_encode(saveMap));
         
         // Destroy the map
         ds_map_destroy(saveMap);
@@ -92,17 +90,12 @@ global.autosave = false; // Disable autosaving since we're loading the game
 
 global.grav = global.saveGrav;
 
-//TODO: check if there's a better way of copying these
-for (var i = 0; i < SECRET_ITEM_TOTAL; i++) {
-    global.secretItem[i] = global.saveSecretItem[i];
-}
-
-for (var i = 0; i < BOSS_ITEM_TOTAL; i++) {
-    global.bossItem[i] = global.saveBossItem[i];
-}
+//TODO: make sure this works correctly
+array_copy(global.secretItem,0,global.saveSecretItem,0,SECRET_ITEM_TOTAL);
+array_copy(global.bossItem,0,global.saveBossItem,0,BOSS_ITEM_TOTAL);
 
 global.gameClear = global.saveGameClear;
 
-instance_create_layer(global.savePlayerX,global.savePlayerY,"Player",objPlayer);
+instance_create_layer(global.savePlayerX,global.savePlayerY,layer_get_id("Player"),objPlayer);
 
 room_goto(asset_get_index(global.saveRoom));
