@@ -5,13 +5,13 @@
     "name": "objWater3",
     "eventList": [
         {
-            "id": "6731d028-4f26-4bb4-81a4-446998ab2660",
+            "id": "24bf9f61-74a7-4434-a930-fb9b88864eb1",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "47b03db6-3db0-4656-87b8-db0a4640fe1e",
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 4,
+            "eventtype": 0,
             "m_owner": "a9b3be03-d889-42c1-a082-1bc2e748da07"
         }
     ],

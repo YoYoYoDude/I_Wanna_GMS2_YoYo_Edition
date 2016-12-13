@@ -4122,6 +4122,63 @@
                 "resourcePath": "objects\\objBlockRise\\objBlockRise.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "c72b80af-26ff-41f1-9a4d-41546eedea80",
+            "Value": {
+                "id": "3e45223e-1648-403c-a6a8-3f056bb674ed",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objWaterParent\\objWaterParent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7133a18e-8901-40b6-8514-6c3556da2371",
+            "Value": {
+                "id": "cc2aed2c-30f8-438f-b2d8-5c8a3180fb51",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\\fDefault30\\fDefault30.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "f7d11f3d-8cf6-41e9-b7ae-d2c7d8dcc73c",
+            "Value": {
+                "id": "6309c47b-a985-4321-9e46-d3aee8abfb0f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\\fDefault18\\fDefault18.yy",
+                "resourceType": "GMFont"
+            }
         }
     ],
     "room_order": [

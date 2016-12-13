@@ -50,39 +50,42 @@ if (CONTROLLER_ENABLED && global.controllerIndex != -1)
 */
 
 if (global.gameStarted) {
-	//TODO: handle pausing
-	/*
-    //handle pausing
-    if (global.pauseDelay <= 0) //check if pause delay is active
-    {
-        if (scrButtonCheckPressed(global.pauseButton))
-        {
-            if (!global.gamePaused)  //game currently not paused, pause the game
-            {
-                if (!global.noPause)
-                {
-                    global.gamePaused = true;  //set the game to paused
-                    global.pauseDelay = PAUSE_DELAY_LENGTH; //set pause delay
+    // Handle pausing
+    if (global.pauseDelay <= 0) { // Check if pause delay is active
+        if (scrButtonCheckPressed(global.pauseButton)) {
+            if (!global.gamePaused) { // Game is currently not paused, pause the game
+                if (!global.noPause) {
+                    global.gamePaused = true; // Set the game to paused
+                    global.pauseDelay = PAUSE_DELAY_LENGTH; // Set pause delay
                     
-                    instance_deactivate_all(true);  //deactivate everything
+                    instance_deactivate_all(true); // Deactivate everything
                     
-                    global.pauseSurf = surface_create(view_wport[0], view_hport[0]);    //create new surface
-                    surface_copy(global.pauseSurf,0,0,application_surface);             //copy current screen to it
+					//TODO: figure out new wport/hport stuff
+					//TODO: maybe create a new sprite instead of surface?
+                    global.pauseSurf = surface_create(view_wport[0], view_hport[0]); // Create new surface
+                    if (surface_exists(global.pauseSurf))
+						surface_copy(global.pauseSurf,0,0,application_surface); // Copy the current screen to it
+					
+					//TODO
+					// Disable automatically drawing the application surface since the pause screen will be over it
+					//application_surface_draw_enable(false);
                 }
-            }
-            else    //game currently paused, unpause the game
-            {
-                global.gamePaused = false;  //set the game to unpaused
-                global.pauseDelay = PAUSE_DELAY_LENGTH;     //set pause delay
+            } else { // Game is currently paused, unpause the game
+                global.gamePaused = false; // Set the game to unpaused
+                global.pauseDelay = PAUSE_DELAY_LENGTH; // Set pause delay
                 
-                instance_activate_all();    //reactivate objects
+                instance_activate_all(); // Reactivate everything
                 
                 if (surface_exists(global.pauseSurf))
-                    surface_free(global.pauseSurf);         //free the surface
+                    surface_free(global.pauseSurf); // Free the pause surface
+				
+				//TODO
+				// Enable automatically drawing the application surface
+				//application_surface_draw_enable(true);
                 
-                scrSaveConfig();    //save config in case volume levels were changed
+                scrSaveConfig(); // Save the config in case the volume levels were changed
                 
-                io_clear(); //clear input states to prevent possible pause strats/exploits
+                io_clear(); // Clear input states to prevent possible pause strats/exploits
             }
         }
     }
@@ -90,7 +93,6 @@ if (global.gameStarted) {
     {
         global.pauseDelay -= 1;
     }
-	*/
     
     if (!global.gamePaused) { // Check if the game is currently paused
         // Check for restart button
@@ -221,7 +223,7 @@ if (keyboard_check_pressed(vk_f2)) {
 }
 
 // Toggle fullscreen mode
-if (keyboard_check_pressed(vk_f4) && !global.gamePaused) {
+if (keyboard_check_pressed(vk_f4)) { //TODO:  && !global.gamePaused
     global.fullscreenMode = !global.fullscreenMode;
     
     window_set_fullscreen(global.fullscreenMode);

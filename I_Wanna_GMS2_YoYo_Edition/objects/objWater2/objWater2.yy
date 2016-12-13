@@ -5,28 +5,18 @@
     "name": "objWater2",
     "eventList": [
         {
-            "id": "70c1e7e3-5244-4746-a9fd-da6afa692f7b",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "47b03db6-3db0-4656-87b8-db0a4640fe1e",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "83f3112e-e6a0-4027-8db6-3b9faa9b5e82"
-        },
-        {
-            "id": "f7037518-6995-48c6-b62e-6ae7d0361f15",
+            "id": "ad3b1a06-81c9-458d-9019-bca3b8767768",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 7,
+            "enumb": 0,
+            "eventtype": 0,
             "m_owner": "83f3112e-e6a0-4027-8db6-3b9faa9b5e82"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "c72b80af-26ff-41f1-9a4d-41546eedea80",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
