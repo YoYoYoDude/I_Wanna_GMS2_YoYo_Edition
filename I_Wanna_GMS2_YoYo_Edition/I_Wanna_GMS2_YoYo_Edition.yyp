@@ -4198,6 +4198,158 @@
                 "resourcePath": "scripts\\scrFlipGrav\\scrFlipGrav.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "517cb6e8-68cd-4be4-9a87-f464e38ccc4b",
+            "Value": {
+                "id": "6bc027f4-ddca-44fa-9ae0-f5ead42b8901",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrMakeCircle\\scrMakeCircle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "aabd53ab-dcb4-4f54-ba1f-d00364e4950d",
+            "Value": {
+                "id": "e3ac3c05-ed0b-408a-afd9-4655bdff48aa",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrMakeShapes\\scrMakeShapes.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "38c045e2-7344-4889-80d2-c87a1f74b226",
+            "Value": {
+                "id": "7be2e108-23d2-4e3d-abde-4f142640ece2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrGetMusic\\scrGetMusic.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e7516b04-b833-464a-ad9c-66a1f534d8f0",
+            "Value": {
+                "id": "4b9a45e4-e84a-4c6c-96e9-10755eacc2fa",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrPlayMusic\\scrPlayMusic.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bdc37358-4fdf-42cf-8210-901620e08953",
+            "Value": {
+                "id": "0317d6d4-e0da-4493-9048-d23bd25e56c8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrStopMusic\\scrStopMusic.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "656c3d81-197c-40ff-8441-08ee64b240fa",
+            "Value": {
+                "id": "c9bb834b-4a9a-4c4f-abae-b671c8714619",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\\musGuyRock\\musGuyRock.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "057a285e-8f3d-41d2-97d5-4134c4af0eb1",
+            "Value": {
+                "id": "a6c63c21-76a9-4298-bfa5-06901b3bcedd",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\\musOnDeath\\musOnDeath.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "873761cd-7c20-4679-b5a8-54b9baabf20c",
+            "Value": {
+                "id": "995da0ee-857f-4e0e-8542-8124ea29aeac",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrToggleMusic\\scrToggleMusic.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "room_order": [
@@ -4213,6 +4365,10 @@
         "decef4e8-363d-4bda-baf7-7c812b41747d",
         "c52ea260-ae94-47c7-b392-d95a56ac4311",
         "6fabd393-b7dc-4820-80c2-894810a39349",
+        "873761cd-7c20-4679-b5a8-54b9baabf20c",
+        "38c045e2-7344-4889-80d2-c87a1f74b226",
+        "e7516b04-b833-464a-ad9c-66a1f534d8f0",
+        "bdc37358-4fdf-42cf-8210-901620e08953",
         "99ab7300-f393-4e99-b89a-dfc738ef2ada",
         "91b9fa43-d4fd-47be-ba84-4896e6980727",
         "9713bdb3-68dc-44cf-82d4-2797b5d17d5d",
@@ -4221,7 +4377,9 @@
         "908aa708-08b5-4cbb-aca6-ceedde2efbe3",
         "8c0d6882-0979-4cde-aaba-713763660939",
         "f551a449-fe8e-4d77-a39e-28642577f627",
-        "4539b8e9-9ef2-43d2-8e98-b87bcf098c2c"
+        "4539b8e9-9ef2-43d2-8e98-b87bcf098c2c",
+        "517cb6e8-68cd-4be4-9a87-f464e38ccc4b",
+        "aabd53ab-dcb4-4f54-ba1f-d00364e4950d"
     ],
     "tutorial": ""
 }

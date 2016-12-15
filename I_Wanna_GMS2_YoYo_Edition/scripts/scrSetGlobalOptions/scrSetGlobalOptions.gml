@@ -18,7 +18,8 @@ window_set_caption(global.roomCaptionDef);
 
 global.startRoom = rSample01; // Sets which room for the game to begin with
 
-global.deathMusicMode = 0; // Sets whether or not to play death music when the player dies (0 = no death music, 1 = death music and instantly pause current music, 2 = death music and fade out current music)
+//TODO: set deathMusicMode default to 0
+global.deathMusicMode = 1; // Sets whether or not to play death music when the player dies (0 = no death music, 1 = death music and instantly pause current music, 2 = death music and fade out current music)
 global.adAlign = false; // Sets whether or not to enable A/D align
 global.edgeDeath = true; // Sets whether to kill the player when he leaves the boundaries of the room
 

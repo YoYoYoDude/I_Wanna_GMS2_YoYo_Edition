@@ -1,20 +1,9 @@
-/// @description Put into the correct layer
+/// @description Play current room music and put into the correct layer
+
+scrGetMusic(); // Find and play the proper music for the current room
 
 //TODO: objWorld layer check
 
 layer = layer_get_id("World");
 
 //TODO: set room view settings here? (can add stuff like macros to make it easy to change window size, etc)
-
-/*
-if (layer_exists("World"))
-{
-	layer = layer_get_id("World");
-	//layer = "World";
-	//layer_add_instance(layer_get_id("World"),id);
-}
-else
-{
-	show_debug_message("World layer doesn't exist");
-}
-*/

@@ -30,8 +30,7 @@ global.gameStarted = false; // Determines whether the game is currently in progr
 global.noPause = false; // Sets whether or not to allow pausing (useful for bosses to prevent desync)
 global.autosave = false; // Keeps track of whether or not to autosave the game the next time the player is created
 global.gamePaused = false; // Keeps track of whether the game is paused or not
-global.pauseSurf = -1; // Stores the screen surface when the game is paused
-global.pauseSpr = -1; // TODO: description here, remove global.pauseSurf
+global.pauseSpr = -1; // Copies the application surface when the game is paused
 global.pauseDelay = 0; // Sets a pause delay so that the player can't quickly pause/unpause to prevent pause buffer strats
 
 global.currentMusicID = -1; // Keeps track of what song the current main music is

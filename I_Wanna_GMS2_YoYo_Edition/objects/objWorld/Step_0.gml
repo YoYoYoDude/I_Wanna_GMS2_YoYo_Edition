@@ -59,24 +59,9 @@ if (global.gameStarted) {
                     global.pauseDelay = PAUSE_DELAY_LENGTH; // Set pause delay
                     
                     instance_deactivate_all(true); // Deactivate everything
-                    
-					//TODO: figure out new wport/hport stuff
 					
 					// Copy the current screen to a new sprite
 					global.pauseSpr = sprite_create_from_surface(application_surface,0,0,surface_get_width(application_surface),surface_get_height(application_surface),false,false,0,0);
-					show_debug_message(string(global.pauseSpr));
-					
-					show_debug_message(string(surface_get_width(application_surface)));
-					
-					//TODO: maybe create a new sprite instead of surface?
-					/*
-                    global.pauseSurf = surface_create(view_wport[0], view_hport[0]); // Create new surface
-                    if (surface_exists(global.pauseSurf))
-						surface_copy(global.pauseSurf,0,0,application_surface); // Copy the current screen to it
-					
-					surface_save(application_surface,"test1.png");
-					surface_save(global.pauseSurf,"test2.png");
-					*/
 					
 					// Disable automatically drawing the application surface since the pause screen will be over it
 					application_surface_draw_enable(false);
@@ -91,12 +76,6 @@ if (global.gameStarted) {
 				sprite_delete(global.pauseSpr);
 				show_debug_message(string(global.pauseSpr));
 				
-				//TODO: remove this
-				/*
-                if (surface_exists(global.pauseSurf))
-                    surface_free(global.pauseSurf); // Free the pause surface
-				*/
-				
 				// Enable automatically drawing the application surface
 				application_surface_draw_enable(true);
                 
@@ -105,9 +84,7 @@ if (global.gameStarted) {
                 io_clear(); // Clear input states to prevent possible pause strats/exploits
             }
         }
-    }
-    else
-    {
+    } else {
         global.pauseDelay -= 1;
     }
     
@@ -231,6 +208,7 @@ if (global.debugVisuals) {
 // End game
 if (keyboard_check_pressed(vk_escape)) {
     game_end();
+	exit;
 }
 
 // Restart game
@@ -248,20 +226,9 @@ if (keyboard_check_pressed(vk_f4)) { //TODO:  && !global.gamePaused
     scrSaveConfig(); // Save fullscreen setting
 }
 
-//TODO: reset window size
-/*
-// Reset window size
-if (keyboard_check_pressed(vk_f5) && !global.gamePaused) {
-    scrResetWindowSize();
-}
-*/
-
-//TODO: toggle music
-/*
 // Toggle music
 if (keyboard_check(vk_control) && keyboard_check_pressed(ord("M")) && !global.gamePaused) {
     scrToggleMusic();
     
     scrSaveConfig(); // Save mute setting
 }
-*/
