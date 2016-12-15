@@ -5,10 +5,14 @@
 if (global.gamePaused) {
     //TODO: do we need this since we're not drawing the application surface?
 	//draw_clear(c_black);
+	
+	draw_sprite(global.pauseSpr,-1,0,0);
     
+	/*
     if (surface_exists(global.pauseSurf)) { // Check if the pause surface exists before drawing it
         draw_surface(global.pauseSurf,0,0);
 	}
+	*/
     
     draw_set_color(c_black);
     draw_set_alpha(0.4);

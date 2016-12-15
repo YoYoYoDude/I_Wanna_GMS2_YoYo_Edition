@@ -31,6 +31,7 @@ global.noPause = false; // Sets whether or not to allow pausing (useful for boss
 global.autosave = false; // Keeps track of whether or not to autosave the game the next time the player is created
 global.gamePaused = false; // Keeps track of whether the game is paused or not
 global.pauseSurf = -1; // Stores the screen surface when the game is paused
+global.pauseSpr = -1; // TODO: description here, remove global.pauseSurf
 global.pauseDelay = 0; // Sets a pause delay so that the player can't quickly pause/unpause to prevent pause buffer strats
 
 global.currentMusicID = -1; // Keeps track of what song the current main music is
@@ -52,9 +53,10 @@ global.windowXPrev = 0;
 global.windowYPrev = 0;
 global.windowWidthPrev = 0;
 global.windowHeightPrev = 0;
-
-display_set_gui_size(view_wport[0],view_hport[0]);  //set the correct gui size for the Draw GUI event
 */
+
+//TODO: should we use surface_get_width/height for this or go back to view?
+display_set_gui_size(surface_get_width(application_surface),surface_get_height(application_surface)); // Set the correct gui size for the Draw GUI event
 
 global.controllerMode = false; // Keeps track of whether to use keyboard or controller for inputs
 global.controllerDelay = -1; // Handles delay for switching between keyboard/controller so that the player can't use both at the same time

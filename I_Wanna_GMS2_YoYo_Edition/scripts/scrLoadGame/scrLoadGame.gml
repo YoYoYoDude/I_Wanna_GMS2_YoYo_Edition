@@ -8,7 +8,8 @@ var loadFile = argument0;
 if (loadFile) {
     // Load the save map
     
-    var f = file_text_open_read("Data\save"+string(global.saveNum));
+	//TODO: maybe change the 2 backslashes into a forward slash so that it looks better
+    var f = file_text_open_read("Data\\save"+string(global.saveNum));
         
     var saveMap = ds_map_create();
     ds_map_read(saveMap,base64_decode(file_text_read_string(f)));

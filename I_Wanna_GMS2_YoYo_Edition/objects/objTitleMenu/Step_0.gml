@@ -3,9 +3,9 @@
 if (scrButtonCheckPressed(global.menuAcceptButton)) {
 	// Start game
 	
-	if (file_exists("Data\save"+string(global.saveNum))) {
+	if (file_exists("Data\\save"+string(global.saveNum))) {
 		scrLoadGame(true);
-	//	file_delete("Data\save"+string(global.saveNum));
+	//	file_delete("Data\\save"+string(global.saveNum));
 		exit;
 	}
 

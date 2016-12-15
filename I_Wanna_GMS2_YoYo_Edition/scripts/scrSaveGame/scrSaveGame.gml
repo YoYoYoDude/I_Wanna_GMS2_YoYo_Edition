@@ -62,7 +62,7 @@ ds_map_add(saveMap,"mapMd5",md5_string_unicode(ds_map_write(saveMap)+MD5_STR_ADD
 
 // Save the map to a file
 
-var f = file_text_open_write("Data\save"+string(global.saveNum));
+var f = file_text_open_write("Data\\save"+string(global.saveNum));
     
 file_text_write_string(f,base64_encode(ds_map_write(saveMap))); // Write map to the save file with base64 encoding
     
