@@ -1,6 +1,5 @@
 /// @description Movement checks
 
-//TODO: check if this can be recoded without using yspeed
 //TODO: maybe make it so that platforms don't force you into ceilings
 
 if (speed != 0 || yspeed != 0) { // Make sure the platform is moving before doing collision checks

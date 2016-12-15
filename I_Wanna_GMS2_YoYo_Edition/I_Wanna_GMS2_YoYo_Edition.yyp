@@ -4179,6 +4179,25 @@
                 "resourcePath": "fonts\\fDefault18\\fDefault18.yy",
                 "resourceType": "GMFont"
             }
+        },
+        {
+            "Key": "8c0d6882-0979-4cde-aaba-713763660939",
+            "Value": {
+                "id": "52e5a7cb-d9ad-4c99-889b-60e70f9ae200",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrFlipGrav\\scrFlipGrav.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "room_order": [
@@ -4200,6 +4219,7 @@
         "2c49270f-2897-4a87-af7a-311b35683926",
         "8bba004b-ddbd-448c-bf28-b445254a9ee8",
         "908aa708-08b5-4cbb-aca6-ceedde2efbe3",
+        "8c0d6882-0979-4cde-aaba-713763660939",
         "f551a449-fe8e-4d77-a39e-28642577f627",
         "4539b8e9-9ef2-43d2-8e98-b87bcf098c2c"
     ],

@@ -13,8 +13,11 @@ onPlatform = false; // Sets if the player is currently standing on a platform
 
 xScale = 1; // Sets the direction the player is facing (1 is facing right, -1 is facing left)
 
-//TODO: figure out hitbox stuff
-//scrSetPlayerMask(); //set the player's hitbox
+// Set the player's hitbox depending on gravity direction
+if (global.grav == 1)
+	mask_index = sprPlayerMask;
+else
+	mask_index = sprPlayerMaskFlip;
 
 // Create the player's bow if on medium mode
 if (global.difficulty == 0 && global.gameStarted)

@@ -16,20 +16,26 @@ if (!frozen) { // Don't move if frozen
 // Check if on a slip block
 var slipBlockTouching = instance_place(x,y+(global.grav),objSlipBlock);
 
+// Vine checks
+var notOnBlock = (place_free(x,y+(global.grav)));
+var onVineR = (place_meeting(x+1,y,objWalljumpR) && notOnBlock);
+var onVineL = (place_meeting(x-1,y,objWalljumpL) && notOnBlock);
+
 if (h != 0) { // Player is moving
-	//TODO: possibly add vine checks back here, behavior is slightly different without them
-	
+	//TODO: add vine check back here?
 	xScale = h; // Set the direction the player is facing
 	
-    if (slipBlockTouching == noone) { // Not touching a slip block, move immediately at full speed
-        hspeed = maxHSpeed * h;
-    } else { // Touching a slip block, use acceleration
-		hspeed += (slipBlockTouching.slip) * h;
+	if ((h == -1 && !onVineR) || (h == 1 && !onVineL)) { // Make sure we're not moving off a vine (that's handled later)
+	    if (slipBlockTouching == noone) { // Not touching a slip block, move immediately at full speed
+	        hspeed = maxHSpeed * h;
+	    } else { // Touching a slip block, use acceleration
+			hspeed += (slipBlockTouching.slip) * h;
 		
-		if (abs(hspeed) > maxHSpeed)
-			hspeed = maxHSpeed * h;
-    }
-        
+			if (abs(hspeed) > maxHSpeed)
+				hspeed = maxHSpeed * h;
+	    }
+	}
+	
     sprite_index = sprPlayerRun;
 } else { // Player is not moving
     if (slipBlockTouching == noone) { // Not touching a slip block, stop immediately
@@ -93,11 +99,6 @@ if (global.adAlign && place_meeting(x,y+(global.grav),objBlock) && !frozen) {
     if (scrButtonCheckPressed(global.alignRightButton))
 		hspeed += 1;
 }
-
-// Vine checks
-var notOnBlock = (place_free(x,y+(global.grav)));
-var onVineL = (place_meeting(x-1,y,objWalljumpL) && notOnBlock);
-var onVineR = (place_meeting(x+1,y,objWalljumpR) && notOnBlock);
 
 // Handle walljumps
 if (onVineL || onVineR) {
