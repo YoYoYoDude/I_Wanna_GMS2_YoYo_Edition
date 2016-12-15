@@ -1,7 +1,7 @@
 /// @description scrKillPlayer()
 /// Kills the player
 
-if (instance_exists(objPlayer) && !global.godMode) {
+if (instance_exists(objPlayer) && (!global.noDeath && !global.debugNoDeath)) {
     if (global.gameStarted) {
         // Normal death
 		
@@ -15,7 +15,7 @@ if (instance_exists(objPlayer) && !global.godMode) {
                 global.gameOverMusic = audio_play_sound(musOnDeath,1,false);
             } else if (global.deathMusicMode == 2) { // Fade out the current music
                 with (objWorld)
-                    event_user(0); // Fade out and stops the current music
+                    event_user(0); // Fade out and stop the current music
                 
                 global.gameOverMusic = audio_play_sound(musOnDeath,1,false);
             }

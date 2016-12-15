@@ -29,6 +29,9 @@ global.trigger = array_create(50,false);
 global.gameStarted = false; // Determines whether the game is currently in progress (enables saving, restarting, etc.)
 global.noPause = false; // Sets whether or not to allow pausing (useful for bosses to prevent desync)
 global.autosave = false; // Keeps track of whether or not to autosave the game the next time the player is created
+global.noDeath = false; // Keeps track of whether to give the player god mode
+global.infJump = false; // Keeps track of whether to give the player infinite jump
+
 global.gamePaused = false; // Keeps track of whether the game is paused or not
 global.pauseSpr = -1; // Copies the application surface when the game is paused
 global.pauseDelay = 0; // Sets a pause delay so that the player can't quickly pause/unpause to prevent pause buffer strats

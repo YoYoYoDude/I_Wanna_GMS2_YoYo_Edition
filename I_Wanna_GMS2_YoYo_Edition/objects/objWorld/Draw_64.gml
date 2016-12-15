@@ -44,7 +44,6 @@ if (global.gamePaused) {
 // Draw debug overlay
 if (global.debugOverlay) {
     draw_set_color(c_black);
-	//TODO: make a script to set these font variables?
     draw_set_font(fDefault12);
     draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
@@ -61,8 +60,18 @@ if (global.debugOverlay) {
     scrDrawTextOutline(20,60,"Align: "+string(drawAlign),c_black,c_white);
     scrDrawTextOutline(20,80,"Room name: "+room_get_name(room),c_black,c_white);
     scrDrawTextOutline(20,100,"Room number: "+string(room),c_black,c_white);
-    scrDrawTextOutline(20,120,"God mode: "+string(global.godMode),c_black,c_white);
-    scrDrawTextOutline(20,140,"Infinite jump: "+string(global.infJump),c_black,c_white);
+    scrDrawTextOutline(20,120,"God mode: "+string(global.debugNoDeath),c_black,c_white);
+    scrDrawTextOutline(20,140,"Infinite jump: "+string(global.debugInfJump),c_black,c_white);
     scrDrawTextOutline(20,160,"FPS: "+string(fps),c_black,c_white);
     scrDrawTextOutline(20,180,"Real FPS: "+string(fps_real),c_black,c_white);
+}
+
+// Draw debug mode text when we're on the title screen
+if (global.debugMode && room == rTitle) {
+	draw_set_color(c_red);
+	draw_set_font(fDefault12);
+    draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+	
+	draw_text(36,36,"Debug mode");
 }

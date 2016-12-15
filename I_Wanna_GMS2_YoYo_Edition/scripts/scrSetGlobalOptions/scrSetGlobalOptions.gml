@@ -1,13 +1,15 @@
 /// @description scrSetGlobalOptions()
 /// Sets configurable global game options
 
+// Set global options that can be changed mid-game
+
 //TODO: disable debug mode
 global.debugMode = true; // Enables debug keys (check objWorld step event to see all of them), make sure to set this to "false" before releasing your game
 global.debugVisuals = true; // Enables changing the color/alpha of the player when inf jump/god mode are toggled, make sure to disable this if you want to change the player's image_alpha or image_blend
 global.debugOverlay = false; // Enables showing the debug text overlay (shows player location, align, etc.)
-global.godMode = false; // Enables god mode (toggle with Home key)
-global.infJump = false; // Enables infinite jump (toggle with End key)
-global.showHitbox = false; // Enables showing the player's hitbox (toggle with Del key)
+global.debugNoDeath = false; // Enables debug god mode (toggle with Home key)
+global.debugInfJump = false; // Enables debug infinite jump (toggle with End key)
+global.debugShowHitbox = false; // Enables showing the player's hitbox (toggle with Del key)
 
 //TODO: captions
 /*
@@ -18,10 +20,15 @@ window_set_caption(global.roomCaptionDef);
 
 global.startRoom = rSample01; // Sets which room for the game to begin with
 
+//TODO: maybe make this a macro instead?
+global.noFileSelectMode = false; // Enables a mode that skips any menus and immediately starts a new game
+
 //TODO: set deathMusicMode default to 0
 global.deathMusicMode = 1; // Sets whether or not to play death music when the player dies (0 = no death music, 1 = death music and instantly pause current music, 2 = death music and fade out current music)
 global.adAlign = false; // Sets whether or not to enable A/D align
 global.edgeDeath = true; // Sets whether to kill the player when he leaves the boundaries of the room
+
+// Set global options that stay constant
 
 #macro MD5_STR_ADD "Put something here!" // Sets what to add to the end of md5 input string to make saves harder to hack, should be set to something unique and hard to predict (similar to setting a password)
 

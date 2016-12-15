@@ -22,8 +22,8 @@ var onVineR = (place_meeting(x+1,y,objWalljumpR) && notOnBlock);
 var onVineL = (place_meeting(x-1,y,objWalljumpL) && notOnBlock);
 
 if (h != 0) { // Player is moving
-	//TODO: add vine check back here?
-	xScale = h; // Set the direction the player is facing
+	if (!onVineR && !onVineL) // Make sure we're not currently on a vine
+		xScale = h; // Set the direction the player is facing
 	
 	if ((h == -1 && !onVineR) || (h == 1 && !onVineL)) { // Make sure we're not moving off a vine (that's handled later)
 	    if (slipBlockTouching == noone) { // Not touching a slip block, move immediately at full speed
@@ -64,8 +64,6 @@ if (!onPlatform) {
     else if ((vspeed * global.grav) > 0.05)
 		sprite_index = sprPlayerFall;
 } else {
-	//TODO: change this to y+1?
-	//TODO: check if onPlatform even works correctly and is needed
     if (!place_meeting(x,y+(4*global.grav),objPlatform))
 		onPlatform = false;
 }

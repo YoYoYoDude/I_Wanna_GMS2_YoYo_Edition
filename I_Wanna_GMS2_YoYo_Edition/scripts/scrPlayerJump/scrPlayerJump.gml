@@ -6,7 +6,7 @@ if (place_meeting(x,y+(global.grav),objBlock) || onPlatform || place_meeting(x,y
 	vspeed = -jump;
     djump = 1;
     audio_play_sound(sndJump,0,false);
-} else if (djump == 1 || place_meeting(x,y+(global.grav),objWater2) || global.infJump) {
+} else if (djump == 1 || place_meeting(x,y+(global.grav),objWater2) || (global.infJump || global.debugInfJump)) {
     // Double jump
 	vspeed = -jump2;
     sprite_index = sprPlayerJump;

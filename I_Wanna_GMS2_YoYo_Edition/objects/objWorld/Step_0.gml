@@ -74,7 +74,6 @@ if (global.gameStarted) {
                 
 				// Delete pause screen sprite
 				sprite_delete(global.pauseSpr);
-				show_debug_message(string(global.pauseSpr));
 				
 				// Enable automatically drawing the application surface
 				application_surface_draw_enable(true);
@@ -158,17 +157,17 @@ if (global.debugMode && global.gameStarted && !global.gamePaused) {
 	
 	// Toggle showing the player's hitbox
     if (keyboard_check_pressed(vk_delete)) {
-        global.showHitbox = !global.showHitbox;
+        global.debugShowHitbox = !global.debugShowHitbox;
     }
 	
 	// Toggle god mode
     if (keyboard_check_pressed(vk_home)) {
-        global.godMode = !global.godMode;
+        global.debugNoDeath = !global.debugNoDeath;
     }
 	
 	// Toggle infinite jump
     if (keyboard_check_pressed(vk_end)) {
-        global.infJump = !global.infJump;
+        global.debugInfJump = !global.debugInfJump;
     }
 	
 	// Go to next room
@@ -191,12 +190,12 @@ if (global.debugMode && global.gameStarted && !global.gamePaused) {
 // Check to show debug visuals on the player
 if (global.debugVisuals) {
     with (objPlayer) {
-        if (global.godMode) // Make the player slightly transparent when god mode is on
+        if (global.debugNoDeath) // Make the player slightly transparent when god mode is on
             image_alpha = 0.7;
         else
             image_alpha = 1;
         
-        if (global.infJump) // Make the player turn blue when infinite jump is on
+        if (global.debugInfJump) // Make the player turn blue when infinite jump is on
             image_blend = c_blue;
         else
             image_blend = c_white;

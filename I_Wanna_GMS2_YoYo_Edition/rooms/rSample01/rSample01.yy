@@ -76,7 +76,9 @@
         "472bca7c-adb2-401d-b1c8-7a014b0a186d",
         "27ee0b6c-6629-4767-b305-b5ceecd1714e",
         "5ecb697f-6373-49c2-b8a5-4646df4badee",
-        "84e3de7b-5340-4e89-a84e-20add143bad7"
+        "84e3de7b-5340-4e89-a84e-20add143bad7",
+        "7497f64f-09be-4548-b769-59adf86f704b",
+        "02f69c0a-2566-452d-be4c-77cbd48bbd3d"
     ],
     "layers": [
         {
@@ -1799,6 +1801,54 @@
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_44AE1F5B",
                     "objId": "f395a6e9-8aaa-437e-bf96-bb5ad2eae312",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
+                },
+                {
+                    "id": "7497f64f-09be-4548-b769-59adf86f704b",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_45117176",
+                    "x": 384,
+                    "y": 192,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_45117176",
+                    "objId": "a456f725-1539-4472-853e-672adb978801",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
+                },
+                {
+                    "id": "02f69c0a-2566-452d-be4c-77cbd48bbd3d",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_33560D3C",
+                    "x": 448,
+                    "y": 96,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "InstanceCreationCode_inst_33560D3C.gml",
+                    "creationCodeType": ".gml",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_33560D3C",
+                    "objId": "70363824-dce5-4c1f-80f8-9192b94f805e",
                     "rotation": 0,
                     "scaleX": 1,
                     "scaleY": 1
