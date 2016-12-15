@@ -16,13 +16,15 @@ if (!place_free(x,y+vspeed)) {
 	if(vspeed <= 0) {
 		move_contact_solid(90,abs(vspeed));
 		
-		if (global.grav == -1)
+		if (global.grav == -1) {
 			djump = 1;
+		}
     } else {
 		move_contact_solid(270,abs(vspeed));
 		
-		if (global.grav == 1)
+		if (global.grav == 1) {
 			djump = 1;
+		}
 	}
 	
     vspeed = 0;

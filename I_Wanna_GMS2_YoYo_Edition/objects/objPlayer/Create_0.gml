@@ -14,14 +14,16 @@ onPlatform = false; // Sets if the player is currently standing on a platform
 xScale = 1; // Sets the direction the player is facing (1 is facing right, -1 is facing left)
 
 // Set the player's hitbox depending on gravity direction
-if (global.grav == 1)
+if (global.grav == 1) {
 	mask_index = sprPlayerMask;
-else
+} else {
 	mask_index = sprPlayerMaskFlip;
+}
 
 // Create the player's bow if on medium mode
-if (global.difficulty == 0 && global.gameStarted)
+if (global.difficulty == 0 && global.gameStarted) {
     instance_create_layer(x,y,layer,objBow);
+}
 
 // Save the game if currently set to autosave
 if (global.autosave) {

@@ -11,6 +11,7 @@ if (global.gamePaused) {
     draw_set_color(c_black);
     draw_set_alpha(0.4);
     
+	//TODO: figure out view_wport/hport stuff
     draw_rectangle(-1,-1,view_wport[0],view_hport[0],0); // Draw a rectangle over the pause screen to darken it
     
     draw_set_alpha(1);
@@ -73,5 +74,5 @@ if (global.debugMode && room == rTitle) {
     draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 	
-	draw_text(36,36,"Debug mode");
+	draw_text(10,10,"Debug mode");
 }

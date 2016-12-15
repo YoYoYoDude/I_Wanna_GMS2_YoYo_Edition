@@ -2,5 +2,6 @@
 
 //TODO: should this be moved to the step event?
 
-if (global.bossItem[itemNum])
+if (global.bossItem[itemNum]) {
     instance_destroy();
+}

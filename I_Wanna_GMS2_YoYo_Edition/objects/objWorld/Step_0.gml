@@ -60,6 +60,7 @@ if (global.gameStarted) {
                     
                     instance_deactivate_all(true); // Deactivate everything
 					
+					//TODO: maybe use a surface instead since trial version doesn't support this
 					// Copy the current screen to a new sprite
 					global.pauseSpr = sprite_create_from_surface(application_surface,0,0,surface_get_width(application_surface),surface_get_height(application_surface),false,false,0,0);
 					
@@ -87,7 +88,7 @@ if (global.gameStarted) {
         global.pauseDelay -= 1;
     }
     
-    if (!global.gamePaused) { // Check if the game is currently paused
+    if (!global.gamePaused) { // Make sure the game is currently unpaused
         // Check for restart button
 		if (scrButtonCheckPressed(global.restartButton)) {
             // Stop death sound/music
@@ -117,11 +118,13 @@ if (global.gameStarted) {
     } else {
         // Game is paused, check for volume controls
 		if (scrButtonCheck(global.upButton)) {
-            if (global.volumeLevel < 100)
+            if (global.volumeLevel < 100) {
                 global.volumeLevel += 1;
+			}
         } else if (scrButtonCheck(global.downButton)) {
-            if (global.volumeLevel > 0)
+            if (global.volumeLevel > 0) {
                 global.volumeLevel -= 1;
+			}
         }
 		
 		// Set master gain
@@ -172,16 +175,18 @@ if (global.debugMode && global.gameStarted && !global.gamePaused) {
 	
 	// Go to next room
     if (keyboard_check_pressed(vk_pageup) && room != room_last) {
-        with (objPlayer)
+        with (objPlayer) {
             instance_destroy();
+		}
     
         room_goto_next();
     }
 	
 	// Go to previous room
     if (keyboard_check_pressed(vk_pagedown) && room != room_first) {
-        with (objPlayer)
+        with (objPlayer) {
             instance_destroy();
+		}
     
         room_goto_previous();
     }
@@ -190,15 +195,17 @@ if (global.debugMode && global.gameStarted && !global.gamePaused) {
 // Check to show debug visuals on the player
 if (global.debugVisuals) {
     with (objPlayer) {
-        if (global.debugNoDeath) // Make the player slightly transparent when god mode is on
+        if (global.debugNoDeath) { // Make the player slightly transparent when god mode is on
             image_alpha = 0.7;
-        else
+        } else {
             image_alpha = 1;
+		}
         
-        if (global.debugInfJump) // Make the player turn blue when infinite jump is on
+        if (global.debugInfJump) { // Make the player turn blue when infinite jump is on
             image_blend = c_blue;
-        else
+        } else {
             image_blend = c_white;
+		}
     }
 }
 

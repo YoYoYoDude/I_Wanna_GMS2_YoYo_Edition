@@ -14,8 +14,9 @@ if (instance_exists(objPlayer) && (!global.noDeath && !global.debugNoDeath)) {
                 
                 global.gameOverMusic = audio_play_sound(musOnDeath,1,false);
             } else if (global.deathMusicMode == 2) { // Fade out the current music
-                with (objWorld)
+                with (objWorld) {
                     event_user(0); // Fade out and stop the current music
+				}
                 
                 global.gameOverMusic = audio_play_sound(musOnDeath,1,false);
             }
@@ -34,8 +35,9 @@ if (instance_exists(objPlayer) && (!global.noDeath && !global.debugNoDeath)) {
     } else {
         // Death in the difficulty select room, restart the room
 		
-		with(objPlayer)
+		with (objPlayer) {
             instance_destroy();
+		}
             
         room_restart();
     }

@@ -22,5 +22,6 @@ switch (room) {
         break;
 }
 
-if (roomSong != -2) // Don't play anything if roomSong is set to -2 (this is useful for bosses that you want full control of what song is playing)
+if (roomSong != -2) { // Don't play anything if roomSong is set to -2 (this is useful for bosses that you want full control of what song is playing)
     scrPlayMusic(roomSong,true); // Play the song for the current room
+}

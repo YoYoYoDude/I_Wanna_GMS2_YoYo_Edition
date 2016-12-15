@@ -13,8 +13,9 @@ if (place_meeting(x,y+(global.grav),objBlock) || onPlatform || place_meeting(x,y
     audio_play_sound(sndDJump,0,false);
     
 	// Check if touching water3
-    if (!place_meeting(x,y+(global.grav),objWater3))
+    if (!place_meeting(x,y+(global.grav),objWater3)) {
         djump = 0; // Take away the player's double jump
-    else
+    } else {
         djump = 1; // Replenish double jump if touching water3
+	}
 }

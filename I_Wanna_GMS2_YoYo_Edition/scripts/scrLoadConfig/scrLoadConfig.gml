@@ -15,8 +15,9 @@ window_set_fullscreen(global.fullscreenMode);
 global.vsyncMode = ini_read_real("settings","vsync_mode",false);
 //TODO: implement vsync
 /*
-if (global.vsyncMode) // Set vsync mode if it's currently on since it's off by default
+if (global.vsyncMode) { // Set vsync mode if it's currently on since it's off by default
     scrSetVsync();
+}
 */
 
 //TODO: make sure vsync is over smoothing mode in menus

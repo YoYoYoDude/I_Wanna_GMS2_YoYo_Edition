@@ -30,8 +30,9 @@ if (loadFile) {
         global.saveGrav = ds_map_find_value(saveMap,"saveGrav");
         
         if (is_string(global.saveRoom)) { // Check if the saved room string loaded properly
-            if (!room_exists(asset_get_index(global.saveRoom))) // Check if the room index in the save is valid
+            if (!room_exists(asset_get_index(global.saveRoom))) { // Check if the room index in the save is valid
                 saveValid = false;
+			}
         } else {
             saveValid = false;
         }
@@ -46,16 +47,18 @@ if (loadFile) {
         var mapMd5 = ds_map_find_value(saveMap,"mapMd5");
         
         // Check if MD5 is not a string in case the save was messed with or got corrupted
-        if (!is_string(mapMd5))
-            mapMd5 = ""; // Make it a string for the MD5 comparison
+        if (!is_string(mapMd5)) {
+            saveValid = false; // MD5 is not a string, save is invalid
+		} else {
+	        // Generate MD5 string to compare with
+	        ds_map_delete(saveMap,"mapMd5");
+	        var genMd5 = md5_string_unicode(ds_map_write(saveMap)+MD5_STR_ADD);
         
-        // Generate MD5 string to compare with
-        ds_map_delete(saveMap,"mapMd5");
-        var genMd5 = md5_string_unicode(ds_map_write(saveMap)+MD5_STR_ADD);
-        
-		// Check if MD5 hash is invalid
-        if (mapMd5 != genMd5)
-            saveValid = false;
+			// Check if MD5 hash is invalid
+	        if (mapMd5 != genMd5) {
+	            saveValid = false;
+			}
+		}
 		
 		//TODO: remove this
 		show_debug_message(json_encode(saveMap));
@@ -83,8 +86,9 @@ if (loadFile) {
 
 // Set game variables and the player's position
 
-with (objPlayer) // Destroy the player if it exists
+with (objPlayer) { // Destroy the player if it exists
     instance_destroy();
+}
 
 global.gameStarted = true; // Sets game in progress (enables saving, restarting, etc.)
 global.noPause = false; // Disable no pause mode
@@ -98,6 +102,7 @@ array_copy(global.bossItem,0,global.saveBossItem,0,BOSS_ITEM_TOTAL);
 
 global.gameClear = global.saveGameClear;
 
-instance_create_layer(global.savePlayerX,global.savePlayerY,layer_get_id("Player"),objPlayer);
+//TODO: maybe recode this in case the "Player" layer doesn't exist (and remove player layers from menu rooms)
+instance_create_layer(global.savePlayerX,global.savePlayerY,"Player",objPlayer);
 
 room_goto(asset_get_index(global.saveRoom));

@@ -25,8 +25,9 @@ if (speed != 0 || yspeed != 0) { // Make sure the platform is moving before doin
 	// Check if the player needs to be moved along with the platform
     with (instance_place(x,y-(2*global.grav),objPlayer)) {
         y += other.vspeed + other.yspeed;
-        if (place_free(x+other.hspeed,y))
+        if (place_free(x+other.hspeed,y)) {
 			x += other.hspeed;
+		}
     }
     
     if (vspeed < 0) {

@@ -13,10 +13,11 @@ with (objPlayer) {
 	jump2 = abs(jump2) * global.grav;
 	gravity = abs(gravity) * global.grav;
 	
-	if (global.grav == 1)
+	if (global.grav == 1) {
 		mask_index = sprPlayerMask;
-	else
+	} else {
 		mask_index = sprPlayerMaskFlip;
+	}
 	
 	y += 4 * global.grav;
 }

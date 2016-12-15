@@ -12,7 +12,8 @@ if (!global.muteMusic) {  // Check if music is currently muted
         
         audio_stop_sound(global.currentMusic);
         
-        if (songID != -1)
+        if (songID != -1) {
             global.currentMusic = audio_play_sound(global.currentMusicID,1,loopSong);
+		}
     }
 }

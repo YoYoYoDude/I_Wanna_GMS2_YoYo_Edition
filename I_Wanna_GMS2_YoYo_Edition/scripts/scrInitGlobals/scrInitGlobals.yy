@@ -1,8 +1,8 @@
 {
-    "id": "38350e1f-3f66-4c1b-8804-9f957c9b81a5",
+    "id": "af59747c-6f2c-4ec6-a4e4-95fd0a4773d0",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scrSetGlobalOptions",
+    "name": "scrInitGlobals",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -1,4 +1,4 @@
-/// @description scrSetGlobalOptions()
+/// @description scrInitEngineOptions()
 /// Sets configurable global game options
 
 // Set global options that can be changed mid-game
@@ -19,9 +19,6 @@ window_set_caption(global.roomCaptionDef);
 */
 
 global.startRoom = rSample01; // Sets which room for the game to begin with
-
-//TODO: maybe make this a macro instead?
-global.noFileSelectMode = false; // Enables a mode that skips any menus and immediately starts a new game
 
 //TODO: set deathMusicMode default to 0
 global.deathMusicMode = 1; // Sets whether or not to play death music when the player dies (0 = no death music, 1 = death music and instantly pause current music, 2 = death music and fade out current music)
@@ -44,3 +41,5 @@ global.edgeDeath = true; // Sets whether to kill the player when he leaves the b
 
 #macro CONTROLLER_ENABLED true // Sets whether controllers are supported
 #macro CONTROLLER_DELAY_LENGTH 5 // Sets the delay in frames in which the player can switch between keyboard/controller (can be set to 0 to disable delay)
+
+#macro NO_FILE_SELECT_MODE false // Enables a mode that skips any menus and immediately starts a new game

@@ -4,7 +4,7 @@ if (other.x < 0 || other.x > room_width || other.y < 0 || other.y > room_height)
 	if (!smoothTransition) { // Not using smooth transition, use default warp
         event_inherited();
     } else { // Using smooth transition, wrap the player around the screen then warp
-        if (other.x < 0){
+        if (other.x < 0) {
             other.x += room_width;
         } else if (other.x > room_width) {
             other.x -= room_width;

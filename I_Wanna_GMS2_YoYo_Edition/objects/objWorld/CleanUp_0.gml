@@ -12,17 +12,3 @@ if (global.gamePaused) {
 	// Enable automatically drawing the application surface
 	application_surface_draw_enable(true);
 }
-
-/*
-// Delete the pause sprite in case the game is currently paused
-application_surface_draw_enable(true);
-
-if (sprite_exists(global.pauseSpr))
-	sprite_delete(global.pauseSpr);
-*/
-
-/*
-// Free the pause surface in case the game is currently paused
-if (surface_exists(global.pauseSurf))
-    surface_free(global.pauseSurf);
-*/

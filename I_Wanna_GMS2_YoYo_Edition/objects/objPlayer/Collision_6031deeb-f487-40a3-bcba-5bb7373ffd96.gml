@@ -1,6 +1,6 @@
 /// @description Platform collision
 
-if (global.grav == 1) {// Check if on top of the platform (when right-side up)
+if (global.grav == 1) { // Check if on top of the platform (when right-side up)
     if (y-vspeed/2 <= other.y) {
         if (other.vspeed >= 0) {
             y = other.y-9; // Snap to the platform

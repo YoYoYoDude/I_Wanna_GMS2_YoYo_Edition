@@ -7,10 +7,11 @@ var R = (scrButtonCheck(global.rightButton) || (DIRECTIONAL_TAP_FIX && scrButton
 var h = 0; //Keeps track if the player is moving left/right
 
 if (!frozen) { // Don't move if frozen
-    if (R)
+    if (R) {
         h = 1;
-    else if (L)
+    } else if (L) {
         h = -1;
+	}
 }
 
 // Check if on a slip block
@@ -22,8 +23,9 @@ var onVineR = (place_meeting(x+1,y,objWalljumpR) && notOnBlock);
 var onVineL = (place_meeting(x-1,y,objWalljumpL) && notOnBlock);
 
 if (h != 0) { // Player is moving
-	if (!onVineR && !onVineL) // Make sure we're not currently on a vine
+	if (!onVineR && !onVineL) { // Make sure we're not currently on a vine
 		xScale = h; // Set the direction the player is facing
+	}
 	
 	if ((h == -1 && !onVineR) || (h == 1 && !onVineL)) { // Make sure we're not moving off a vine (that's handled later)
 	    if (slipBlockTouching == noone) { // Not touching a slip block, move immediately at full speed
@@ -31,8 +33,9 @@ if (h != 0) { // Player is moving
 	    } else { // Touching a slip block, use acceleration
 			hspeed += (slipBlockTouching.slip) * h;
 		
-			if (abs(hspeed) > maxHSpeed)
+			if (abs(hspeed) > maxHSpeed) {
 				hspeed = maxHSpeed * h;
+			}
 	    }
 	}
 	
@@ -44,13 +47,15 @@ if (h != 0) { // Player is moving
         if (hspeed > 0) {
             hspeed -= slipBlockTouching.slip;
             
-            if (hspeed <= 0)
+            if (hspeed <= 0) {
                 hspeed = 0;
+			}
         } else if (hspeed < 0) {
             hspeed += slipBlockTouching.slip;
             
-            if (hspeed >= 0)
+            if (hspeed >= 0) {
                 hspeed = 0;
+			}
         }
     }
   
@@ -59,51 +64,62 @@ if (h != 0) { // Player is moving
 
 // Check if standing on a platform
 if (!onPlatform) {
-    if ((vspeed * global.grav) < -0.05)
+    if ((vspeed * global.grav) < -0.05) {
 		sprite_index = sprPlayerJump;
-    else if ((vspeed * global.grav) > 0.05)
+    } else if ((vspeed * global.grav) > 0.05) {
 		sprite_index = sprPlayerFall;
+	}
 } else {
-    if (!place_meeting(x,y+(4*global.grav),objPlatform))
+    if (!place_meeting(x,y+(4*global.grav),objPlatform)) {
 		onPlatform = false;
+	}
 }
 
 // Check if on a slide block
 var slideBlockTouching = instance_place(x,y+(global.grav),objSlideBlock);
 
-if (slideBlockTouching != noone) // On a slide block, start moving with it
+if (slideBlockTouching != noone) { // On a slide block, start moving with it
     hspeed += slideBlockTouching.slide;
+}
 
 // Check if moving faster vertically than max speed
-if (abs(vspeed) > maxVSpeed)
+if (abs(vspeed) > maxVSpeed) {
 	vspeed = sign(vspeed) * maxVSpeed;
+}
 
 // Check buttons for player actions
 if (!frozen) { // Check if frozen before doing anything
-    if (scrButtonCheckPressed(global.jumpButton))
+    if (scrButtonCheckPressed(global.jumpButton)) {
         scrPlayerJump();
-    if (scrButtonCheckReleased(global.jumpButton))
+	}
+    if (scrButtonCheckReleased(global.jumpButton)) {
         scrPlayerVJump();
-    if (scrButtonCheckPressed(global.shootButton))
+	}
+    if (scrButtonCheckPressed(global.shootButton)) {
         scrPlayerShoot();
-    if (scrButtonCheckPressed(global.suicideButton))
+	}
+    if (scrButtonCheckPressed(global.suicideButton)) {
         scrKillPlayer();
+	}
 }
 
 // A/D align
 if (global.adAlign && place_meeting(x,y+(global.grav),objBlock) && !frozen) {
-    if (scrButtonCheckPressed(global.alignLeftButton))
+    if (scrButtonCheckPressed(global.alignLeftButton)) {
 		hspeed -= 1;
-    if (scrButtonCheckPressed(global.alignRightButton))
+	}
+    if (scrButtonCheckPressed(global.alignRightButton)) {
 		hspeed += 1;
+	}
 }
 
 // Handle walljumps
 if (onVineL || onVineR) {
-    if (onVineR)
+    if (onVineR) {
         xScale = -1;
-    else
+    } else {
         xScale = 1;
+	}
     
     vspeed = 2 * global.grav;
     sprite_index = sprPlayerSlide;
@@ -111,19 +127,21 @@ if (onVineL || onVineR) {
     // Check if moving away from the vine
 	if (onVineL && scrButtonCheckPressed(global.rightButton)) || (onVineR && scrButtonCheckPressed(global.leftButton)) {
         if (scrButtonCheck(global.jumpButton)) { // Jumping off vine
-            if (onVineR)
+            if (onVineR) {
                 hspeed = -15;
-            else
+            } else {
                 hspeed = 15;
+			}
             
             vspeed = -9 * global.grav;
             audio_play_sound(sndWallJump,0,false);
             sprite_index = sprPlayerJump;
         } else { // Moving off vine
-			if (onVineR)
+			if (onVineR) {
                 hspeed = -3;
-            else
+            } else {
                 hspeed = 3;
+			}
             
             sprite_index = sprPlayerFall;
         }
@@ -154,10 +172,11 @@ if (instance_exists(objSlope) && hspeed != 0) { // Make sure slopes exist in the
         
 		// Snap the player to any solids in the way
         if (!place_free(x,y+vspeed)) {
-            if (global.grav == 1)
+            if (global.grav == 1) {
                 move_contact_solid(270,abs(vspeed));
-            else
+            } else {
                 move_contact_solid(90,abs(vspeed));
+			}
             vspeed = 0;
         }
         
@@ -200,12 +219,14 @@ if (instance_exists(objSlope) && hspeed != 0) { // Make sure slopes exist in the
                 } else { // Did not snap onto the slope, lower horizontal movement and check again
                     if (hTest > 0) {
                         hTest -= 1;
-                        if (hTest <= 0)
+                        if (hTest <= 0) {
                             slopeCheck = false;
+						}
                     } else if (hTest < 0) {
                         hTest += 1;
-                        if (hTest >= 0)
+                        if (hTest >= 0) {
                             slopeCheck = false;
+						}
                     } else {
                         slopeCheck = false;
                     }
@@ -240,12 +261,14 @@ if (instance_exists(objSlope) && hspeed != 0) { // Make sure slopes exist in the
             } else { // Something is in the way, lower horizontal movement and check again
                 if (hTest > 0) {
                     hTest -= 1;
-                    if (hTest <= 0)
+                    if (hTest <= 0) {
                         slopeCheck = false;
+					}
                 } else if (hTest < 0) {
                     hTest += 1;
-                    if (hTest >= 0)
+                    if (hTest >= 0) {
                         slopeCheck = false;
+					}
                 } else {
                     slopeCheck = false;
                 }

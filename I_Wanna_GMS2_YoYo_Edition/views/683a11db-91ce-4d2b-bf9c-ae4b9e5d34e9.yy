@@ -7,7 +7,7 @@
         "73bc25c9-5d7f-4723-b81b-c77a6548b82d"
     ],
     "filterType": "GMSprite",
-    "folderName": "Backgrounds",
+    "folderName": "Tile Sets",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
