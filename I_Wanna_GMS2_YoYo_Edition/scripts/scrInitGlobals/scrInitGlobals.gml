@@ -1,7 +1,7 @@
 /// @description scrInitGlobals()
 /// Initializes all global variables needed for the game
 
-scrInitEngineOptions(); // Initialize global game options
+scrInitEngineOptions(); // Initialize engine options
 
 // Initialize basic game variables
 global.saveNum = 1;

@@ -5,8 +5,8 @@ var roomSong;
 
 switch (room) {
     case rTitle: // Add rooms to this list here (if you have several rooms that play the same song they can be put together)
-    //case rMenu:
-    //case rOptions:
+    case rMenu:
+    case rOptions:
     //case rDifficultySelect:
     case rSample01:
         roomSong = musGuyRock;

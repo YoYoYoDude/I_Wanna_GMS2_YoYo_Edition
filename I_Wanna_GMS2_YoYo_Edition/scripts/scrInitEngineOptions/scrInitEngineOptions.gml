@@ -1,7 +1,7 @@
 /// @description scrInitEngineOptions()
-/// Sets configurable global game options
+/// Sets configurable engine options
 
-// Set global options that can be changed mid-game
+// Set global engine options that can be changed mid-game
 
 //TODO: disable debug mode
 global.debugMode = true; // Enables debug keys (check objWorld step event to see all of them), make sure to set this to "false" before releasing your game
@@ -21,15 +21,15 @@ window_set_caption(global.roomCaptionDef);
 global.startRoom = rSample01; // Sets which room for the game to begin with
 
 //TODO: set deathMusicMode default to 0
-global.deathMusicMode = 1; // Sets whether or not to play death music when the player dies (0 = no death music, 1 = death music and instantly pause current music, 2 = death music and fade out current music)
+global.deathMusicMode = 2; // Sets whether or not to play death music when the player dies (0 = no death music, 1 = death music and instantly pause current music, 2 = death music and fade out current music)
 global.adAlign = false; // Sets whether or not to enable A/D align
 global.edgeDeath = true; // Sets whether to kill the player when he leaves the boundaries of the room
 
-// Set global options that stay constant
+// Set engine options that stay constant
 
 #macro MD5_STR_ADD "Put something here!" // Sets what to add to the end of md5 input string to make saves harder to hack, should be set to something unique and hard to predict (similar to setting a password)
 
-#macro MENU_MODE 1 // Sets whether to use a warp room or a menu for selecting the game's difficulty (0 = warp room, 1 = menu)
+#macro DIFFICULTY_MENU_MODE 1 // Sets whether to use a warp room or a menu for selecting the game's difficulty (0 = warp room, 1 = menu)
 #macro MENU_SOUND sndJump // Sets what sound to use for navigating the main menu
 #macro TIME_WHEN_DEAD true // Sets whether or not to count the in-game timer when the player is dead
 #macro PAUSE_DELAY_LENGTH 25 // Sets the delay in frames in which the player can pause/unpause the game to prevent pause buffer strats (can be set to 0 to disable pause delay)
