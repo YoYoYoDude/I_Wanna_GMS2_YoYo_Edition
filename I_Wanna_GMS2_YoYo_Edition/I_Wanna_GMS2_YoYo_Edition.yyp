@@ -4521,6 +4521,25 @@
                 "resourcePath": "fonts\\fDefault24\\fDefault24.yy",
                 "resourceType": "GMFont"
             }
+        },
+        {
+            "Key": "a471d7d1-e4a4-4759-bcee-570b058f7646",
+            "Value": {
+                "id": "917d6ae3-88cb-485f-acb5-809a95362c12",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objOptionsMenu\\objOptionsMenu.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "room_order": [

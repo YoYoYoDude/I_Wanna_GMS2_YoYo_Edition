@@ -22,13 +22,13 @@ if (!global.controllerMode) {
 // Draw button info
 draw_set_font(fDefault12);
 draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-draw_text(34,556,"["+backButton+"] Back");
+draw_set_valign(fa_bottom);
+draw_text(34,576,"["+backButton+"] Back");
 draw_set_halign(fa_right);
-draw_text(766,556,"["+acceptButton+"] Accept");
+draw_text(766,576,"["+acceptButton+"] Accept");
 
 // Check if we should draw button info for entering to the options menu
 if (optionsText) {
     draw_set_halign(fa_middle);
-    draw_text(400,556,"["+optionsButton+"] Options");
+    draw_text(400,576,"["+optionsButton+"] Options");
 }

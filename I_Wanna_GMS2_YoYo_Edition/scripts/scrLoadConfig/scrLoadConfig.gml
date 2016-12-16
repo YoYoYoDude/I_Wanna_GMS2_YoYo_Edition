@@ -20,10 +20,7 @@ if (global.vsyncMode) { // Set vsync mode if it's currently on since it's off by
 }
 */
 
-//TODO: make sure vsync is over smoothing mode in menus
-
 global.smoothingMode = ini_read_real("settings","smoothing_mode",false);
-//TODO: implement smoothing mode (move it out of objWorld step event)
 
 //TODO: implement option to not update windows caption maybe
 

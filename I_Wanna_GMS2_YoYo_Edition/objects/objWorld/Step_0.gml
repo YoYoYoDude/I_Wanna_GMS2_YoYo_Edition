@@ -1,8 +1,7 @@
 /// @description Game checks
 
-//TODO: smoothing mode
-// Set linear interpolation depending on what the current smoothing setting is
-//texture_set_interpolation(global.smoothingMode);
+// Set texture filtering depending on what the current smoothing setting is
+gpu_set_texfilter(global.smoothingMode);
 
 //TODO: controller checks
 /*
@@ -117,18 +116,18 @@ if (global.gameStarted) {
         }
     } else {
         // Game is paused, check for volume controls
-		if (scrButtonCheck(global.upButton)) {
+		if (scrButtonCheck(global.upButton)) { // Raise volume
             if (global.volumeLevel < 100) {
                 global.volumeLevel += 1;
 			}
-        } else if (scrButtonCheck(global.downButton)) {
+			audio_master_gain(global.volumeLevel/100); // Set master gain
+        } else if (scrButtonCheck(global.downButton)) { // Lower volume
             if (global.volumeLevel > 0) {
                 global.volumeLevel -= 1;
 			}
+			audio_master_gain(global.volumeLevel/100); // Set master gain
         }
-		
-		// Set master gain
-        audio_master_gain(global.volumeLevel/100);
+        
     }
     
 	//TODO: room caption
