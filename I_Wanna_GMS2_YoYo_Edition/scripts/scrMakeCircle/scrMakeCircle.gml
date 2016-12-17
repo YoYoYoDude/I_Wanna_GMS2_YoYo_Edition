@@ -8,6 +8,8 @@
 /// argument5 - speed
 /// argument6 - projectile object to spawn
 
+//TODO: add comments to this script?
+
 var spawnX = argument0;
 var spawnY = argument1;
 var spawnLayer = argument2

@@ -7,7 +7,7 @@ switch (room) {
     case rTitle: // Add rooms to this list here (if you have several rooms that play the same song they can be put together)
     case rMenu:
     case rOptions:
-    //case rDifficultySelect:
+    case rDifficultySelect:
     case rSample01:
         roomSong = musGuyRock;
         break; // Always put a break after setting the song

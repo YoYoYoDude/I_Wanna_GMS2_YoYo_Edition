@@ -3,8 +3,6 @@
 
 // Make an array of all the gamepad buttons to check
 var buttonArr = [gp_face1,gp_face2,gp_face3,gp_face4,gp_padu,gp_padd,gp_padl,gp_padr,gp_stickr,gp_stickl,gp_select,gp_start,gp_shoulderr,gp_shoulderrb,gp_shoulderl,gp_shoulderlb];
-//TODO
-show_debug_message(string(array_length_1d(buttonArr)));
 
 // Check every button in the array
 for (var i = 0; i < array_length_1d(buttonArr); i++) {

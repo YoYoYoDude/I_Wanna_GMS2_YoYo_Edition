@@ -4,6 +4,7 @@
 scrInitEngineOptions(); // Initialize engine options
 
 // Initialize basic game variables
+
 global.saveNum = 1;
 global.difficulty = 0; // 0 = medium, 1 = hard, 2 = very hard, 3 = impossible
 global.deaths = 0;
