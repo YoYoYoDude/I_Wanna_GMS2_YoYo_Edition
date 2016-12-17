@@ -3,6 +3,7 @@
 // Animate menu sprite
 playerIndex = (playerIndex + 1/5) mod 4;
 
+// Check for button inputs
 if (scrButtonCheckPressed(global.menuUpButton)) { // Move up in the menu
     audio_play_sound(MENU_SOUND,0,false);
     optionSelect -= 1;
@@ -33,15 +34,13 @@ if (scrButtonCheckPressed(global.menuUpButton)) { // Move up in the menu
         global.smoothingMode = !global.smoothingMode;
     } else if (optionSelect == 5) { // Save changes and go to the keyboard controls menu
         scrSaveConfig();
-		//TODO
-        //instance_create(x,y,objKeyboardControlsMenu);
-        //instance_destroy();
+        instance_create_layer(x,y,layer,objKeyboardMenu);
+        instance_destroy();
         exit;
     } else if (optionSelect == 6) { // Save changes and go to the controller options menu
         scrSaveConfig();
-		//TODO
-        //instance_create(x,y,objControllerMenu);
-        //instance_destroy();
+        instance_create_layer(x,y,layer,objControllerMenu);
+		instance_destroy();
         exit;
     }
 }

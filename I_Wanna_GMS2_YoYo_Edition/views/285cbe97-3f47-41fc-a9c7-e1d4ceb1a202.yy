@@ -6,7 +6,8 @@
     "children": [
         "99ab7300-f393-4e99-b89a-dfc738ef2ada",
         "91b9fa43-d4fd-47be-ba84-4896e6980727",
-        "9713bdb3-68dc-44cf-82d4-2797b5d17d5d"
+        "9713bdb3-68dc-44cf-82d4-2797b5d17d5d",
+        "590c7ac8-5066-444a-b1a1-effc5f522326"
     ],
     "filterType": "GMScript",
     "folderName": "Controls",

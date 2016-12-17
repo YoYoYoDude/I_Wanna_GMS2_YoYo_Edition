@@ -6,7 +6,6 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 // Draw menu option text
-
 for (var i = 0; i < optionNum; i++) {
     draw_text(xSelector,ySelector+(ySeperation*i),strSelect[i]);
 }
@@ -42,7 +41,6 @@ if (global.smoothingMode) {
 }
 
 // Draw menu sprite
-
-draw_sprite(sprPlayerIdle,playerIndex,xSelector-16,ySelector+(ySeperation*optionSelect)+26-7);
+draw_sprite(sprPlayerIdle,playerIndex,xSelector-16,ySelector+(ySeperation*optionSelect)+19);
 
 scrDrawButtonInfo(false); // Draw menu button text

@@ -4540,6 +4540,63 @@
                 "resourcePath": "objects\\objOptionsMenu\\objOptionsMenu.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "d63e8260-18b0-4d8c-adb2-bc104054ebae",
+            "Value": {
+                "id": "8837947c-3052-4975-b499-731dae73ccae",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objKeyboardMenu\\objKeyboardMenu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "02203e3e-75d0-4057-aba5-e7d573094b96",
+            "Value": {
+                "id": "e74a26ea-762b-4d1b-a5e9-45dc6fdb5cf2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objControllerMenu\\objControllerMenu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "590c7ac8-5066-444a-b1a1-effc5f522326",
+            "Value": {
+                "id": "52f6cf0c-090f-4863-9668-b43de38e1f7e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrAnyControllerButtonPressed\\scrAnyControllerButtonPressed.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "room_order": [
@@ -4567,6 +4624,7 @@
         "99ab7300-f393-4e99-b89a-dfc738ef2ada",
         "91b9fa43-d4fd-47be-ba84-4896e6980727",
         "9713bdb3-68dc-44cf-82d4-2797b5d17d5d",
+        "590c7ac8-5066-444a-b1a1-effc5f522326",
         "2c49270f-2897-4a87-af7a-311b35683926",
         "8bba004b-ddbd-448c-bf28-b445254a9ee8",
         "908aa708-08b5-4cbb-aca6-ceedde2efbe3",
