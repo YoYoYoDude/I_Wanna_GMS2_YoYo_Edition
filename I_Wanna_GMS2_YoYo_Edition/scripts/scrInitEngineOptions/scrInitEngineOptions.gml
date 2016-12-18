@@ -34,6 +34,7 @@ global.edgeDeath = true; // Sets whether to kill the player when he leaves the b
 #macro TIME_WHEN_DEAD true // Sets whether or not to count the in-game timer when the player is dead
 #macro PAUSE_DELAY_LENGTH 25 // Sets the delay in frames in which the player can pause/unpause the game to prevent pause buffer strats (can be set to 0 to disable pause delay)
 #macro DIRECTIONAL_TAP_FIX false // Sets whether to change the behavior of tapping left/right for less than 1 frame (by default the player does not move when this happens, enabling this always moves the player for 1 frame when left/right is tapped)
+#macro PLAYER_ANIMATION_FIX true // Sets whether to fix the weird player animation inconsistencies when moving around //TODO: disable this by default
 
 #macro SECRET_ITEM_TOTAL 8 // Sets how many secret items for the game to save/load
 #macro BOSS_ITEM_TOTAL 8 // Sets how many boss items for the game to save/load
