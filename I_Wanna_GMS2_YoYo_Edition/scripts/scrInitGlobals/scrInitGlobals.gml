@@ -44,22 +44,13 @@ global.gameOverMusic = -1; // Keeps track of the game over music instance
 global.musicFading = false; // Keeps track of whether the main music is currently fading out
 global.currentGain = 0; // Keeps track of the current main music gain before a song is faded out
 
-
-//TODO: figure out new view stuff
-/*
-//get the default window size
-global.windowWidth = view_wport[0];
-global.windowHeight = view_hport[0];
-
-//keeps track of previous window position/size when display_reset is used for setting vsync
+// Keeps track of previous window position/size when display_reset is used for setting vsync
 global.windowXPrev = 0;
 global.windowYPrev = 0;
 global.windowWidthPrev = 0;
 global.windowHeightPrev = 0;
-*/
 
-//TODO: should we use surface_get_width/height for this or go back to view?
-display_set_gui_size(surface_get_width(application_surface),surface_get_height(application_surface)); // Set the correct gui size for the Draw GUI event
+display_set_gui_size(surface_get_width(application_surface),surface_get_height(application_surface)); // Set the correct GUI size for the Draw GUI event
 
 global.controllerMode = false; // Keeps track of whether to use keyboard or controller for inputs
 global.controllerDelay = -1; // Handles delay for switching between keyboard/controller so that the player can't use both at the same time

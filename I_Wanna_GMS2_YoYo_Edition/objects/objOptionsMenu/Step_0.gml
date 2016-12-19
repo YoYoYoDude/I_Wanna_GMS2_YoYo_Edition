@@ -28,8 +28,7 @@ if (scrButtonCheckPressed(global.menuUpButton)) { // Move up in the menu
         window_set_fullscreen(global.fullscreenMode);
     } else if (optionSelect == 3) { // Toggle vsync mode
         global.vsyncMode = !global.vsyncMode;
-        //TODO: implement this
-        //scrSetVsync();
+        scrSetVsync();
     } else if (optionSelect == 4) { // Toggle smoothing mode
         global.smoothingMode = !global.smoothingMode;
     } else if (optionSelect == 5) { // Save changes and go to the keyboard controls menu

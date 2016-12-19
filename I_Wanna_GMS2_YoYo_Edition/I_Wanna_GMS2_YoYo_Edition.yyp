@@ -4673,6 +4673,63 @@
                 "resourcePath": "objects\\objWarpStart\\objWarpStart.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "a566ed78-fe83-4638-9077-607f059bf6bb",
+            "Value": {
+                "id": "803b23cd-4f1b-417d-b122-db577780f8ea",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrRestartGame\\scrRestartGame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "111f96d3-3ed5-4bc1-9a83-231c5f18f167",
+            "Value": {
+                "id": "6488f6f1-7a0c-4255-b773-f158d83f1489",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrSetVsync\\scrSetVsync.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b5362ef1-fe9c-408d-9c93-c44c4488abee",
+            "Value": {
+                "id": "4b33181d-8ea1-45ce-9390-7687c28ccac1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scrSetWindowCaption\\scrSetWindowCaption.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "room_order": [
@@ -4691,9 +4748,12 @@
         "decef4e8-363d-4bda-baf7-7c812b41747d",
         "c52ea260-ae94-47c7-b392-d95a56ac4311",
         "6fabd393-b7dc-4820-80c2-894810a39349",
+        "b5362ef1-fe9c-408d-9c93-c44c4488abee",
         "7262fefb-9ed8-4b43-8ac1-8eb640067b32",
         "7667b91f-cf8f-42ce-9cad-58fd4578e84d",
         "1671de56-5ada-477d-82e8-07290be73ec5",
+        "111f96d3-3ed5-4bc1-9a83-231c5f18f167",
+        "a566ed78-fe83-4638-9077-607f059bf6bb",
         "873761cd-7c20-4679-b5a8-54b9baabf20c",
         "38c045e2-7344-4889-80d2-c87a1f74b226",
         "e7516b04-b833-464a-ad9c-66a1f534d8f0",

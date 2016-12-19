@@ -11,31 +11,25 @@ if (PLAYER_ANIMATION_FIX) {
 	var onVineR = (place_meeting(x+1,y,objWalljumpR) && notOnBlock);
 	var onVineL = (place_meeting(x-1,y,objWalljumpL) && notOnBlock);
 	
-	if (!onVineR && !onVineL) {
-		if (!onPlatform) {
-		    if (notOnBlock) {
-				if ((vspeed * global.grav) < 0) {
-					sprite_index = sprPlayerJump;
-			    } else {
-					sprite_index = sprPlayerFall;
-				}
+	if (!onVineR && !onVineL) { // Not touching any vines
+		if (onPlatform || !notOnBlock) { // Standing on something
+			// Check if moving left/right
+			var L = (scrButtonCheck(global.leftButton) || (DIRECTIONAL_TAP_FIX && scrButtonCheckPressed(global.leftButton)));
+			var R = (scrButtonCheck(global.rightButton) || (DIRECTIONAL_TAP_FIX && scrButtonCheckPressed(global.rightButton)));
+			
+			if ((L || R) && !frozen) {
+				sprite_index = sprPlayerRun;
 			} else {
 				sprite_index = sprPlayerIdle;
 			}
-		} else {
-			sprite_index = sprPlayerIdle;
+		} else { // In the air
+			if ((vspeed * global.grav) < 0) {
+				sprite_index = sprPlayerJump;
+			} else {
+				sprite_index = sprPlayerFall;
+			}
 		}
-	} else {
+	} else { // Touching a vine
 		sprite_index = sprPlayerSlide;
-	}
-	
-	if (sprite_index == sprPlayerIdle && !frozen) {
-		// Check for left/right button presses
-		var L = (scrButtonCheck(global.leftButton) || (DIRECTIONAL_TAP_FIX && scrButtonCheckPressed(global.leftButton)));
-		var R = (scrButtonCheck(global.rightButton) || (DIRECTIONAL_TAP_FIX && scrButtonCheckPressed(global.rightButton)));
-		
-		if (L || R) {
-			sprite_index = sprPlayerRun;
-		}
 	}
 }

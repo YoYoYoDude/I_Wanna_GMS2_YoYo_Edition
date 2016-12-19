@@ -37,7 +37,6 @@ if (loadFile) {
             saveValid = false;
         }
         
-		//TODO: make sure this works properly
 		global.saveSecretItem = ds_map_find_value(saveMap,"saveSecretItem");
 		global.saveBossItem = ds_map_find_value(saveMap,"saveBossItem");
         
@@ -59,9 +58,6 @@ if (loadFile) {
 	            saveValid = false;
 			}
 		}
-		
-		//TODO: remove this
-		show_debug_message(json_encode(saveMap));
         
         // Destroy the map
         ds_map_destroy(saveMap);
@@ -76,9 +72,7 @@ if (loadFile) {
 		//TODO: change this to not use show_message?
         show_message("Save invalid!");
 		
-		game_restart();
-		//TODO: scrRestartGame?
-        //scrRestartGame();
+		scrRestartGame();
 		
         exit;
     }
@@ -96,7 +90,6 @@ global.autosave = false; // Disable autosaving since we're loading the game
 
 global.grav = global.saveGrav;
 
-//TODO: make sure this works correctly
 array_copy(global.secretItem,0,global.saveSecretItem,0,SECRET_ITEM_TOTAL);
 array_copy(global.bossItem,0,global.saveBossItem,0,BOSS_ITEM_TOTAL);
 

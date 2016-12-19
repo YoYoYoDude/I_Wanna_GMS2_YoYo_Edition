@@ -130,8 +130,7 @@ if (global.gameStarted) {
         
     }
     
-	//TODO: room caption
-    //scrSetRoomCaption();    //keep caption updated
+    scrSetWindowCaption(); // Keep the window caption updated
 }
 
 // Check debug keys
@@ -177,7 +176,6 @@ if (global.debugMode && global.gameStarted && !global.gamePaused) {
         with (objPlayer) {
             instance_destroy();
 		}
-    
         room_goto_next();
     }
 	
@@ -186,7 +184,6 @@ if (global.debugMode && global.gameStarted && !global.gamePaused) {
         with (objPlayer) {
             instance_destroy();
 		}
-    
         room_goto_previous();
     }
 }
@@ -218,14 +215,13 @@ if (keyboard_check_pressed(vk_escape)) {
 
 // Restart game
 if (keyboard_check_pressed(vk_f2)) {
-    game_restart();
+    scrRestartGame();
     exit;
 }
 
 // Toggle fullscreen mode
-if (keyboard_check_pressed(vk_f4)) { //TODO:  && !global.gamePaused
+if (keyboard_check_pressed(vk_f4) && !global.gamePaused) {
     global.fullscreenMode = !global.fullscreenMode;
-    
     window_set_fullscreen(global.fullscreenMode);
     
     scrSaveConfig(); // Save fullscreen setting

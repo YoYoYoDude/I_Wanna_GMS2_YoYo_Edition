@@ -11,12 +11,8 @@ global.debugNoDeath = false; // Enables debug god mode (toggle with Home key)
 global.debugInfJump = false; // Enables debug infinite jump (toggle with End key)
 global.debugShowHitbox = false; // Enables showing the player's hitbox (toggle with Del key)
 
-//TODO: captions
-/*
-global.roomCaptionDef = "I Wanna Be The Studio Engine YoYoYo Edition";  //sets default window caption (only works with the Professional version of Studio)
-global.roomCaptionLast = global.roomCaptionDef;
-window_set_caption(global.roomCaptionDef);
-*/
+global.windowCaptionDef = "I Wanna Be The GMS2 Engine YoYo Edition"; // Sets the default window caption
+window_set_caption(global.windowCaptionDef);
 
 global.startRoom = rSample01; // Sets which room for the game to begin with
 

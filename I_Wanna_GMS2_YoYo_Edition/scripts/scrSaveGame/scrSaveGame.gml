@@ -51,7 +51,6 @@ ds_map_add(saveMap,"savePlayerX",global.savePlayerX);
 ds_map_add(saveMap,"savePlayerY",global.savePlayerY);
 ds_map_add(saveMap,"saveGrav",global.saveGrav);
 
-//TODO: make sure this works properly
 ds_map_add(saveMap,"saveSecretItem",global.saveSecretItem);
 ds_map_add(saveMap,"saveBossItem",global.saveBossItem);
 

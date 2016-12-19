@@ -1,4 +1,4 @@
-/// @description scrMakeCircle(x,y,angle,numprojectiles,speed,obj)
+/// @description scrMakeCircle(x,y,layer,angle,numProjectiles,speed,obj)
 /// Spawns a ring of projectiles 
 /// argument0 - spawn X
 /// argument1 - spawn Y
@@ -7,8 +7,6 @@
 /// argument4 - number of projectiles to spawn
 /// argument5 - speed
 /// argument6 - projectile object to spawn
-
-//TODO: add comments to this script?
 
 var spawnX = argument0;
 var spawnY = argument1;

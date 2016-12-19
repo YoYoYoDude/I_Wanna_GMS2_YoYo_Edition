@@ -1,4 +1,4 @@
-/// @description scrMakeShapes(x,y,angle,edges,numprojectiles,speed,obj)
+/// @description scrMakeShapes(x,y,layer,angle,edges,numProjectiles,speed,obj)
 /// Spawns a custom shape
 /// argument0 - spawn X
 /// argument1 - spawn Y
@@ -8,9 +8,6 @@
 /// argument5 - projectile spawns per edge
 /// argument6 - speed
 /// argument7 - projectile object to spawn
-
-//TODO: look into fixing issue where it spawns 2 projectiles over each other
-//TODO: add comments to this script
 
 var spawnX = argument0;
 var spawnY = argument1;
