@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "objSlope",
     "eventList": [
-        {
-            "id": "ec1fecec-ae4a-4dba-bb91-ce563bc6f46e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "94f20889-8e50-4308-983c-5c833693ed6a"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "96bad039-a64a-4464-9029-d22432ef2fc2",

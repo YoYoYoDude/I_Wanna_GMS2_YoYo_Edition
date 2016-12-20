@@ -59,7 +59,6 @@ if (global.gameStarted) {
                     
                     instance_deactivate_all(true); // Deactivate everything
 					
-					//TODO: maybe use a surface instead since trial version doesn't support this
 					// Copy the current screen to a new sprite
 					global.pauseSpr = sprite_create_from_surface(application_surface,0,0,surface_get_width(application_surface),surface_get_height(application_surface),false,false,0,0);
 					
@@ -104,7 +103,7 @@ if (global.gameStarted) {
                 alarm[0] = -1; // Reset alarm that pauses music
             }
             
-            scrSaveGame(false); // Save death/time
+            scrSaveGame(false); // Save deaths/time
             scrLoadGame(false); // Load the game
         }
         

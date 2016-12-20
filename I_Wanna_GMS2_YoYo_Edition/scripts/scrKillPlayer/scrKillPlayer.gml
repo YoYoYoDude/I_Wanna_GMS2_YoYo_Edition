@@ -31,7 +31,7 @@ if (instance_exists(objPlayer) && (!global.noDeath && !global.debugNoDeath)) {
         
         global.deaths++; // Increment death counter
             
-        scrSaveGame(false); // Save death/time
+        scrSaveGame(false); // Save deaths/time
     } else {
         // Death in the difficulty select room, restart the room
 		

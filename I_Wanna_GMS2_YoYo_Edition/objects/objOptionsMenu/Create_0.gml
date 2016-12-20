@@ -1,7 +1,5 @@
 /// @description Initialize variables
 
-//TODO: add more comments (maybe rename some of these variables
-
 optionNum = 7; // Sets number of separate menu options available
 optionSelect = 0; // Sets which option is currently selected
 

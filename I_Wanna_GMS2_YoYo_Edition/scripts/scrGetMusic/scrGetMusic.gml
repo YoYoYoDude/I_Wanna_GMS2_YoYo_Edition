@@ -11,12 +11,12 @@ switch (room) {
     case rSample01:
         roomSong = musGuyRock;
         break; // Always put a break after setting the song
-    /*
+    //TODO
+	/*
 	case rEnd:
         roomSong = -1; // Play nothing
         break;
 	*/
-	//TODO: add roomSong = -2 example
     default: // By default don't play anything in case the room does not have a song set
         roomSong = -1;
         break;

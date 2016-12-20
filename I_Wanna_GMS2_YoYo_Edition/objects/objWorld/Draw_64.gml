@@ -3,28 +3,25 @@
 // Draw pause screen
 
 if (global.gamePaused) {
-    //TODO: do we need this since we're not drawing the application surface?
-	//draw_clear(c_black);
-	
-	draw_sprite(global.pauseSpr,-1,0,0);
+    draw_sprite(global.pauseSpr,-1,0,0);
     
     draw_set_color(c_black);
     draw_set_alpha(0.4);
     
-	//TODO: figure out view_wport/hport stuff
-    draw_rectangle(-1,-1,view_wport[0],view_hport[0],0); // Draw a rectangle over the pause screen to darken it
+    draw_rectangle(-1,-1,display_get_gui_width(),display_get_gui_height(),0); // Draw a rectangle over the pause screen to darken it
     
     draw_set_alpha(1);
     draw_set_color(c_white);
     
     draw_set_font(fDefault30);
 	draw_set_halign(fa_center);
-	draw_set_valign(fa_top);
+	draw_set_valign(fa_middle);
     
-    draw_text(view_wport[0]/2,view_hport[0]/2 - 24,"PAUSE"); // Draw pause text
+    draw_text(display_get_gui_width()/2,display_get_gui_height()/2,"PAUSE"); // Draw pause text
     
     draw_set_font(fDefault18);
 	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
     
     var t = global.time;
     var timeStr = string(t div 3600) + ":";

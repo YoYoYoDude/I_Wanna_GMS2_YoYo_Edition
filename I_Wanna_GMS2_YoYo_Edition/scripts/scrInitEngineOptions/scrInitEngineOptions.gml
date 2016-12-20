@@ -37,4 +37,4 @@ global.edgeDeath = true; // Sets whether to kill the player when he leaves the b
 #macro CONTROLLER_ENABLED true // Sets whether controllers are supported
 #macro CONTROLLER_DELAY_LENGTH 5 // Sets the delay in frames in which the player can switch between keyboard/controller (can be set to 0 to disable delay)
 
-#macro NO_FILE_SELECT_MODE false // Enables a mode that skips any menus and immediately starts a new game
+#macro NO_FILE_SELECT_MODE false // Enables mode that skips any menus and immediately starts a new game

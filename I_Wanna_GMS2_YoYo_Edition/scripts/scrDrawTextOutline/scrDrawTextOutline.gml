@@ -6,8 +6,6 @@
 /// argument3 - color of the text inside the outline
 /// argument4 - color of the text outline
 
-//TODO: rewrite this to use scaling draw_text functions?
-
 var textX = argument0;
 var textY = argument1;
 var textStr = argument2;
