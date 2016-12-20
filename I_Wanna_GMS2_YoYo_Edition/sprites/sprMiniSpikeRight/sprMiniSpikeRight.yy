@@ -10,9 +10,9 @@
     "bbox_left": 0,
     "bbox_right": 15,
     "bbox_top": 0,
-    "bboxmode": 1,
+    "bboxmode": 0,
     "colkind": 0,
-    "coltolerance": 32,
+    "coltolerance": 0,
     "frames": [
         {
             "id": "26a58870-e223-44a1-aa5a-c5552033a434",

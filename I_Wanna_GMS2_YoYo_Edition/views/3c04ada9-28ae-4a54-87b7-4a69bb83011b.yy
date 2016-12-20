@@ -8,7 +8,8 @@
         "2b14b5a9-dd42-427f-ba63-07d68759934b",
         "fd155a3b-bd6f-480c-8486-4da947c5e635",
         "833ba609-071a-4984-baf1-4643dc139bd4",
-        "6595cc8c-1b00-4329-82cc-9934826ae277"
+        "6595cc8c-1b00-4329-82cc-9934826ae277",
+        "50b7f3ed-1e5d-4cb6-a468-cfd501f0e7eb"
     ],
     "filterType": "GMSprite",
     "folderName": "Slopes",

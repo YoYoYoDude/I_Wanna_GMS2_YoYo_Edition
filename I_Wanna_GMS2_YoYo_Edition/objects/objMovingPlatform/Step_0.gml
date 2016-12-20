@@ -1,7 +1,5 @@
 /// @description Movement checks
 
-//TODO: maybe make it so that platforms don't force you into ceilings
-
 if (speed != 0 || yspeed != 0) { // Make sure the platform is moving before doing collision checks
     // Check if the platform should bounce against any walls
 	if (bounce) {

@@ -2,4 +2,4 @@
 
 event_inherited();
 
-bounce = true; // Sets whether to bounce against walls or not (can be cahgned in creation code)
+bounce = true; // Sets whether to bounce against walls or not (can be changed in creation code)
