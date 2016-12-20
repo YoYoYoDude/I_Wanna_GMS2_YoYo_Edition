@@ -1,7 +1,7 @@
 {
     "id": "9b59e898-fabc-4898-b8ff-b5c7f2165a92",
     "modelName": "GMSprite",
-    "mvc": "1.1",
+    "mvc": "1.11",
     "name": "sprPlayerMaskFlip",
     "For3D": false,
     "HTile": false,
@@ -10,7 +10,7 @@
     "bbox_left": 12,
     "bbox_right": 22,
     "bbox_top": 0,
-    "bboxmode": 0,
+    "bboxmode": 2,
     "colkind": 1,
     "coltolerance": 0,
     "frames": [

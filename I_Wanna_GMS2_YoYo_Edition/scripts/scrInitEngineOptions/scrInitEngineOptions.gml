@@ -3,8 +3,7 @@
 
 // Set global engine options that can be changed mid-game
 
-//TODO: disable debug mode
-global.debugMode = true; // Enables debug keys (check objWorld step event to see all of them), make sure to set this to "false" before releasing your game
+global.debugMode = false; // Enables debug keys (check objWorld step event to see all of them), make sure to set this to "false" before releasing your game
 global.debugVisuals = true; // Enables changing the color/alpha of the player when inf jump/god mode are toggled, make sure to disable this if you want to change the player's image_alpha or image_blend
 global.debugOverlay = false; // Enables showing the debug text overlay (shows player location, align, etc.)
 global.debugNoDeath = false; // Enables debug god mode (toggle with Home key)
@@ -16,8 +15,7 @@ window_set_caption(global.windowCaptionDef);
 
 global.startRoom = rSample01; // Sets which room for the game to begin with
 
-//TODO: set deathMusicMode default to 0
-global.deathMusicMode = 2; // Sets whether or not to play death music when the player dies (0 = no death music, 1 = death music and instantly pause current music, 2 = death music and fade out current music)
+global.deathMusicMode = 0; // Sets whether or not to play death music when the player dies (0 = no death music, 1 = death music and instantly pause current music, 2 = death music and fade out current music)
 global.adAlign = false; // Sets whether or not to enable A/D align
 global.edgeDeath = true; // Sets whether to kill the player when he leaves the boundaries of the room
 
@@ -30,7 +28,7 @@ global.edgeDeath = true; // Sets whether to kill the player when he leaves the b
 #macro TIME_WHEN_DEAD true // Sets whether or not to count the in-game timer when the player is dead
 #macro PAUSE_DELAY_LENGTH 25 // Sets the delay in frames in which the player can pause/unpause the game to prevent pause buffer strats (can be set to 0 to disable pause delay)
 #macro DIRECTIONAL_TAP_FIX false // Sets whether to change the behavior of tapping left/right for less than 1 frame (by default the player does not move when this happens, enabling this always moves the player for 1 frame when left/right is tapped)
-#macro PLAYER_ANIMATION_FIX true // Sets whether to fix the weird player animation inconsistencies when moving around //TODO: disable this by default
+#macro PLAYER_ANIMATION_FIX false // Sets whether to fix the weird player animation inconsistencies when moving around
 
 #macro SECRET_ITEM_TOTAL 8 // Sets how many secret items for the game to save/load
 #macro BOSS_ITEM_TOTAL 8 // Sets how many boss items for the game to save/load

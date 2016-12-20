@@ -27,19 +27,19 @@ if (global.gamePaused) {
 	draw_set_halign(fa_left);
     
     var t = global.time;
-    var timeText = string(t div 3600) + ":";
+    var timeStr = string(t div 3600) + ":";
     t = t mod 3600;
-    timeText += string(t div 600);
+    timeStr += string(t div 600);
     t = t mod 600;
-    timeText += string(t div 60) + ":";
+    timeStr += string(t div 60) + ":";
     t = t mod 60;
-    timeText += string(t div 10);
+    timeStr += string(t div 10);
     t = t mod 10;
-    timeText += string(floor(t));
+    timeStr += string(floor(t));
     
     draw_text(20,516,"Volume: " + string(global.volumeLevel) + "%");
     draw_text(20,541,"Deaths: " + string(global.deaths));
-    draw_text(20,566,"Time: " + timeText);
+    draw_text(20,566,"Time: " + timeStr);
 }
 
 // Draw debug overlay

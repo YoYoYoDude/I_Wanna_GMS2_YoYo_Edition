@@ -31,7 +31,6 @@ if (savePosition) {
     global.savePlayerX = floor(global.savePlayerX);
     global.savePlayerY = floor(global.savePlayerY);
     
-	//TODO: make sure this works correctly
 	array_copy(global.saveSecretItem,0,global.secretItem,0,SECRET_ITEM_TOTAL);
 	array_copy(global.saveBossItem,0,global.bossItem,0,BOSS_ITEM_TOTAL);
     

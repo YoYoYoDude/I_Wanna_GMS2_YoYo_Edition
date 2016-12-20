@@ -1,7 +1,7 @@
 {
     "id": "6f5774bb-e337-4dfb-baf0-b62044057593",
     "modelName": "GMSprite",
-    "mvc": "1.1",
+    "mvc": "1.11",
     "name": "sprBlood",
     "For3D": false,
     "HTile": false,
@@ -10,7 +10,7 @@
     "bbox_left": 1,
     "bbox_right": 2,
     "bbox_top": 1,
-    "bboxmode": 0,
+    "bboxmode": 2,
     "colkind": 0,
     "coltolerance": 32,
     "frames": [

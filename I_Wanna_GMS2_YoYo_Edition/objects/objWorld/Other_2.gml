@@ -17,7 +17,7 @@ if (NO_FILE_SELECT_MODE) { // No file select mode is on, immediately start a new
 	global.gameStarted = true; // Sets game in progress (enables saving, restarting, etc.)
 	global.autosave = true;
 	
-	global.difficulty = 1;
+	global.difficulty = 1; // Set to hard mode
 	
 	room_goto(global.startRoom);
 } else { // No file select mode is off, go to the main menu

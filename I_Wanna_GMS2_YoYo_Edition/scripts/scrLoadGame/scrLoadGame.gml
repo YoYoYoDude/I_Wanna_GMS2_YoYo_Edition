@@ -8,17 +8,16 @@ var loadFile = argument0;
 if (loadFile) {
     // Load the save map
     
-	//TODO: maybe change the 2 backslashes into a forward slash so that it looks better
     var f = file_text_open_read("Data\\save"+string(global.saveNum));
-        
+	
     var saveMap = ds_map_create();
     ds_map_read(saveMap,base64_decode(file_text_read_string(f)));
-        
+	
     file_text_close(f);
     
     var saveValid = true; // Keeps track of whether or not the save being loaded is valid
     
-    if (saveMap != -1) { // Check if the save map loaded correctly
+    if (saveMap != -1) { // Check if the save map loaded properly
         global.deaths = ds_map_find_value(saveMap,"deaths");
         global.time = ds_map_find_value(saveMap,"time");
         global.timeMicro = ds_map_find_value(saveMap,"timeMicro");
@@ -68,12 +67,8 @@ if (loadFile) {
     
     if (!saveValid) { // Check if the save is invalid
         // Save is invalid, restart the game
-		
-		//TODO: change this to not use show_message?
         show_message("Save invalid!");
-		
 		scrRestartGame();
-		
         exit;
     }
 }
@@ -95,7 +90,8 @@ array_copy(global.bossItem,0,global.saveBossItem,0,BOSS_ITEM_TOTAL);
 
 global.gameClear = global.saveGameClear;
 
-//TODO: maybe recode this in case the "Player" layer doesn't exist (and remove player layers from menu rooms)
-instance_create_layer(global.savePlayerX,global.savePlayerY,"Player",objPlayer);
+// Check if the player's layer exists, if it doesn't then create a temporary layer
+var spawnLayer = (layer_exists("Player")) ? layer_get_id("Player") : layer_create(0);
+instance_create_layer(global.savePlayerX,global.savePlayerY,spawnLayer,objPlayer);
 
 room_goto(asset_get_index(global.saveRoom));

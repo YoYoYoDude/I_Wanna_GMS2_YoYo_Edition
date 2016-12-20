@@ -19,8 +19,6 @@ if (global.vsyncMode) { // Only set vsync mode if it's currently on since it's o
 
 global.smoothingMode = ini_read_real("settings","smoothing_mode",false);
 
-//TODO: implement option to not update windows caption maybe
-
 // Keyboard controls
 global.leftButton[0] = ini_read_real("controls","left",vk_left);
 global.rightButton[0] = ini_read_real("controls","right",vk_right);

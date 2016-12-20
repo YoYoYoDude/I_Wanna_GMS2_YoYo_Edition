@@ -66,8 +66,6 @@ for (var i = 0; i < 3; i++) {
 			}
             
             ds_map_destroy(saveMap);
-			
-			show_debug_message(boss[i]);
         } else {
             // Save map didn't load correctly, set variables to the defaults
             deaths[i] = 0;
@@ -95,5 +93,3 @@ for (var i = 0; i < 3; i++) {
     t = t mod 10;
     timeStr[i] += string(floor(t));
 }
-
-show_debug_message(boss);
