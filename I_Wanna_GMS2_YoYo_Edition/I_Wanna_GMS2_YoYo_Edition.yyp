@@ -2010,7 +2010,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "rooms\\rSample01\\rSample01.yy",
+                "resourcePath": "rooms\\rTest\\rTest.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -3228,6 +3228,25 @@
                 ],
                 "resourcePath": "fonts\\fDefault12\\fDefault12.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "f4d17ac0-5ce3-480a-a475-9d1f5e52daf5",
+            "Value": {
+                "id": "681d367b-258f-4f5a-a833-42ae4e4cf3b8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\\f2347f2f-14dd-4ae8-ba4c-c2d08a95a979-room.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -4675,6 +4694,25 @@
             }
         },
         {
+            "Key": "1693bca8-ef49-4f3c-b1cb-50144ae62a98",
+            "Value": {
+                "id": "77b0cc0b-585b-4786-9ce8-12e47d1a3bfe",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\\rSample01\\rSample01.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "b5362ef1-fe9c-408d-9c93-c44c4488abee",
             "Value": {
                 "id": "4b33181d-8ea1-45ce-9390-7687c28ccac1",
@@ -4730,6 +4768,63 @@
                 "resourcePath": "objects\\objSmoothCamera\\objSmoothCamera.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "dc32e98e-47ef-4429-bf5d-eda56e690cb2",
+            "Value": {
+                "id": "3883187f-de08-4f6d-850d-6199868641a7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\\rEnd\\rEnd.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d924d09c-c518-49e8-9899-65491b2a7413",
+            "Value": {
+                "id": "d6f201a9-59f8-4043-a491-33675eeb7d5b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\\rSample02\\rSample02.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "64b25f89-b2ce-4c05-b6fe-b3c66fd5ed20",
+            "Value": {
+                "id": "aae57966-691d-4213-9a2e-6382cf2e58e9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\\4ada81a4-0cdf-4aba-8b68-31d872db6624-room.yy",
+                "resourceType": "GMFolder"
+            }
         }
     ],
     "room_order": [
@@ -4738,6 +4833,9 @@
         "4ada81a4-0cdf-4aba-8b68-31d872db6624",
         "0c430453-d257-476b-9e49-b5092cad9e14",
         "733edc04-0e28-4fb5-8f07-a7f71eabfa5e",
+        "1693bca8-ef49-4f3c-b1cb-50144ae62a98",
+        "d924d09c-c518-49e8-9899-65491b2a7413",
+        "dc32e98e-47ef-4429-bf5d-eda56e690cb2",
         "f2347f2f-14dd-4ae8-ba4c-c2d08a95a979",
         "5eb525ec-f4a1-4c16-8afa-f183131ff09a"
     ],

@@ -3,8 +3,7 @@
 
 // Set global engine options that can be changed mid-game
 
-//TODO
-global.debugMode = true; // Enables debug keys (check objWorld step event to see all of them), make sure to set this to "false" before releasing your game
+global.debugMode = false; // Enables debug keys (check objWorld step event to see all of them), make sure to set this to "false" before releasing your game
 global.debugVisuals = true; // Enables changing the color/alpha of the player when inf jump/god mode are toggled, make sure to disable this if you want to change the player's image_alpha or image_blend
 global.debugOverlay = false; // Enables showing the debug text overlay (shows player location, align, etc.)
 global.debugNoDeath = false; // Enables debug god mode (toggle with Home key)

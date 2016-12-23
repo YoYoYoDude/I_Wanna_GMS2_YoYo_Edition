@@ -1,7 +1,5 @@
 /// @description Initiailze menu variables
 
-//TODO: add comments to these variables (probably should rename some)
-
 xSelector = 96; // Sets where to draw the save info on the x axis
 ySelector = 160; // Sets where to draw the save info on the y axis
 xSeperation = 239; // Sets how much to separate the save files in the menu
