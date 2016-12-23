@@ -4825,6 +4825,44 @@
                 "resourcePath": "views\\4ada81a4-0cdf-4aba-8b68-31d872db6624-room.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "b843ed16-bc6a-49d2-b776-b1b79ee39e11",
+            "Value": {
+                "id": "2eef8c50-63a8-41d5-9aee-11e10cb82ebc",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "notes\\readme.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "d830ca39-e8a8-4222-a40f-f3b71ff22e80",
+            "Value": {
+                "id": "43135fb8-3be4-401d-bae8-ddd5a6140e33",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "notes\\changelog.yy",
+                "resourceType": "GMNotes"
+            }
         }
     ],
     "room_order": [
