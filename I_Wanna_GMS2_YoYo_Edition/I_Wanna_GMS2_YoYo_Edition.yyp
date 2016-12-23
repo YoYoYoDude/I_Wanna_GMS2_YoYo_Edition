@@ -4730,6 +4730,44 @@
                 "resourcePath": "scripts\\scrSetWindowCaption\\scrSetWindowCaption.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "a830be68-c176-4bf5-98e2-6e2e8a20fc96",
+            "Value": {
+                "id": "38239a4c-e116-431a-b553-a55fb85d23b6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSnapCamera\\objSnapCamera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7209b37e-65f5-4198-bfdb-15246c73af4b",
+            "Value": {
+                "id": "54e4abee-ec4c-43f1-a2aa-487f1d17510d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\objSmoothCamera\\objSmoothCamera.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "room_order": [

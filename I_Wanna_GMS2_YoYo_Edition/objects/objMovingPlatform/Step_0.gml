@@ -21,10 +21,19 @@ if (speed != 0 || yspeed != 0) { // Make sure the platform is moving before doin
     y += yspeed;
     
 	// Check if the player needs to be moved along with the platform
+	if (place_meeting(x,y-(3*global.grav),objPlayer))
+		audio_play_sound(sndGlass,0,false);
+	//TODO
     with (instance_place(x,y-(2*global.grav),objPlayer)) {
+		audio_play_sound(sndShoot,0,false);
+		show_debug_message(global.timeMicro);
+		show_debug_message("yes");
         y += other.vspeed + other.yspeed;
+		show_debug_message(other.vspeed + other.yspeed);
         if (place_free(x+other.hspeed,y)) {
+			show_debug_message("yes2");
 			x += other.hspeed;
+			show_debug_message(other.hspeed);
 		}
     }
     

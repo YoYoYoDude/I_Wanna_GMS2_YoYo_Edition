@@ -1,4 +1,4 @@
-/// @description Draw self/text
+/// @description Draw self/sign text
 
 draw_self();
 
