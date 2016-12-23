@@ -1,9 +1,5 @@
 /// @description Initialize variables
 
-//TODO: support for DirectInput gamepads
-//TODO: add analog inputs?
-//TODO: test this
-
 buttonSelect = 0; // Sets which button is currently selected
 
 xSelector = 120; // Sets where to draw the menu text on the x axis

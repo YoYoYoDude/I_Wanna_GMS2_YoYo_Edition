@@ -28,16 +28,10 @@ if (global.fullscreenMode) {
     draw_text(xSelector+xSeperation,ySelector+(ySeperation*2),"Windowed");
 }
 
-if (global.vsyncMode) {
+if (global.smoothingMode) {
     draw_text(xSelector+xSeperation,ySelector+(ySeperation*3),"On");
 } else {
     draw_text(xSelector+xSeperation,ySelector+(ySeperation*3),"Off");
-}
-
-if (global.smoothingMode) {
-    draw_text(xSelector+xSeperation,ySelector+(ySeperation*4),"On");
-} else {
-    draw_text(xSelector+xSeperation,ySelector+(ySeperation*4),"Off");
 }
 
 // Draw menu sprite

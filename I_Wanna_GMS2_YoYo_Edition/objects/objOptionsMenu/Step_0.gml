@@ -26,17 +26,14 @@ if (scrButtonCheckPressed(global.menuUpButton)) { // Move up in the menu
     } else if (optionSelect == 2) { // Toggle fullscreen
         global.fullscreenMode = !global.fullscreenMode;
         window_set_fullscreen(global.fullscreenMode);
-    } else if (optionSelect == 3) { // Toggle vsync mode
-        global.vsyncMode = !global.vsyncMode;
-        scrSetVsync();
-    } else if (optionSelect == 4) { // Toggle smoothing mode
+    } else if (optionSelect == 3) { // Toggle smoothing mode
         global.smoothingMode = !global.smoothingMode;
-    } else if (optionSelect == 5) { // Save changes and go to the keyboard controls menu
+    } else if (optionSelect == 4) { // Save changes and go to the keyboard controls menu
         scrSaveConfig();
         instance_create_layer(x,y,layer,objKeyboardMenu);
         instance_destroy();
         exit;
-    } else if (optionSelect == 6) { // Save changes and go to the controller options menu
+    } else if (optionSelect == 5) { // Save changes and go to the controller options menu
         scrSaveConfig();
         instance_create_layer(x,y,layer,objControllerMenu);
 		instance_destroy();

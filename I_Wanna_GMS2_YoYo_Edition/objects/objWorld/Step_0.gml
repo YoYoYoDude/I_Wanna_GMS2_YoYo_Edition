@@ -3,50 +3,35 @@
 // Set texture filtering depending on what the current smoothing setting is
 gpu_set_texfilter(global.smoothingMode);
 
-//TODO: controller checks
-/*
-//controller checks
-if (CONTROLLER_ENABLED && global.controllerIndex != -1)
-{
-    if (!global.controllerMode)  //check if we should to controller mode
-    {
-        if (keyboard_check_pressed(vk_anykey))
-        {
+// Controller checks
+if (CONTROLLER_ENABLED && global.controllerIndex != -1) {
+    if (!global.controllerMode) { // Check if we should switch to controller mode
+        if (keyboard_check_pressed(vk_anykey)) {
             global.controllerDelay = -1;
+        } else if (scrAnyControllerButtonPressed() != -1) {
+            if (global.controllerDelay == -1) {
+                global.controllerDelay = CONTROLLER_DELAY_LENGTH; // Controller button pressed while in keyboard mode, set delay to switch
+			}
         }
-        else if (scrAnyControllerButton() != -1)
-        {
-            if (global.controllerDelay == -1)
-                global.controllerDelay = CONTROLLER_DELAY_LENGTH;
-        }
-    }
-    else    //check if we should switch to keyboard mode
-    {
-        if (keyboard_check_pressed(vk_anykey))
-        {
-            if (global.controllerDelay == -1)
-                global.controllerDelay = CONTROLLER_DELAY_LENGTH;
-        }
-        else if (scrAnyControllerButton() != -1)
-        {
+    } else { // Check if we should switch to keyboard mode
+        if (keyboard_check_pressed(vk_anykey)) {
+            if (global.controllerDelay == -1) {
+                global.controllerDelay = CONTROLLER_DELAY_LENGTH; // Keyboard button pressed while in controller mode, set delay to switch
+			}
+        } else if (scrAnyControllerButtonPressed() != -1) {
             global.controllerDelay = -1;
         }
     }
     
-    if (global.controllerDelay != -1)   //check delay for switching between keyboard/controller
-    {
-        if (global.controllerDelay == 0)    //delay over, toggle controller mode
-        {
+    if (global.controllerDelay != -1) { // Check if delay for switching between keyboard/controller is active
+        if (global.controllerDelay == 0) { // Delay over, toggle controller mode
             global.controllerMode = !global.controllerMode;
             global.controllerDelay = -1;
-        }
-        else
-        {
+        } else {
             global.controllerDelay -= 1;
         }
     }
 }
-*/
 
 if (global.gameStarted) {
     // Handle pausing

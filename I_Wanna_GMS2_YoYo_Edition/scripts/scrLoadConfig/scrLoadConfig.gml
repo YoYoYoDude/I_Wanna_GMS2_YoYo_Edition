@@ -12,11 +12,6 @@ audio_master_gain(global.volumeLevel/100);
 global.fullscreenMode = ini_read_real("settings","fullscreen_mode",false);
 window_set_fullscreen(global.fullscreenMode);
 
-global.vsyncMode = ini_read_real("settings","vsync_mode",false);
-if (global.vsyncMode) { // Only set vsync mode if it's currently on since it's off by default
-    scrSetVsync();
-}
-
 global.smoothingMode = ini_read_real("settings","smoothing_mode",false);
 
 // Keyboard controls

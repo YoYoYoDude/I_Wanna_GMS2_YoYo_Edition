@@ -46,22 +46,26 @@ if (global.debugOverlay) {
     draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
     
-    var drawX = 0, drawY = 0, drawAlign = 0;
+    var drawX, drawY, drawAlign;
     if (instance_exists(objPlayer)) {
         drawX = objPlayer.x;
         drawY = objPlayer.y;
         drawAlign = objPlayer.x mod 3;
-    }
+    } else {
+		drawX = 0;
+		drawY = 0;
+		drawAlign = 0;
+	}
     
-    scrDrawTextOutline(20,20,"X: "+string(drawX),c_black,c_white);
-    scrDrawTextOutline(20,40,"Y: "+string(drawY),c_black,c_white);
-    scrDrawTextOutline(20,60,"Align: "+string(drawAlign),c_black,c_white);
-    scrDrawTextOutline(20,80,"Room name: "+room_get_name(room),c_black,c_white);
-    scrDrawTextOutline(20,100,"Room number: "+string(room),c_black,c_white);
-    scrDrawTextOutline(20,120,"God mode: "+string(global.debugNoDeath),c_black,c_white);
-    scrDrawTextOutline(20,140,"Infinite jump: "+string(global.debugInfJump),c_black,c_white);
-    scrDrawTextOutline(20,160,"FPS: "+string(fps),c_black,c_white);
-    scrDrawTextOutline(20,180,"Real FPS: "+string(fps_real),c_black,c_white);
+    draw_text(20,20,"X: "+string(drawX));
+    draw_text(20,40,"Y: "+string(drawY));
+    draw_text(20,60,"Align: "+string(drawAlign));
+    draw_text(20,80,"Room name: "+room_get_name(room));
+    draw_text(20,100,"Room number: "+string(room));
+    draw_text(20,120,"God mode: "+string(global.debugNoDeath));
+    draw_text(20,140,"Infinite jump: "+string(global.debugInfJump));
+    draw_text(20,160,"FPS: "+string(fps));
+    draw_text(20,180,"Real FPS: "+string(fps_real));
 }
 
 // Draw debug mode text when we're on the title screen

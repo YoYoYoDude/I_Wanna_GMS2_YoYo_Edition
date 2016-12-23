@@ -48,13 +48,13 @@ if (!settingButton) { // Check if we're currently setting a button bind
     if (buttonSelect == 0) {
         if (scrButtonCheckPressed(global.menuRightButton)) {
             global.controllerIndex += 1;
-            if (global.controllerIndex > 3) {
+            if (global.controllerIndex > 11) {
                 global.controllerIndex = -1;
 			}
         } else if (scrButtonCheckPressed(global.menuLeftButton)) {
             global.controllerIndex -= 1;
             if (global.controllerIndex < -1) {
-                global.controllerIndex = 3;
+                global.controllerIndex = 11;
 			}
         }
     }

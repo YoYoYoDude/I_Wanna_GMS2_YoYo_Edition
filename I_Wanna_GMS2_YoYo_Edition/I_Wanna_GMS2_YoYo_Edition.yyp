@@ -3231,25 +3231,6 @@
             }
         },
         {
-            "Key": "4539b8e9-9ef2-43d2-8e98-b87bcf098c2c",
-            "Value": {
-                "id": "d76e51c8-7f6d-488f-9295-dc092c5a71d3",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "scripts\\scrDrawTextOutline\\scrDrawTextOutline.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "00815603-f554-45d7-8b35-dfed105b7142",
             "Value": {
                 "id": "7f1d7a9e-f500-4a66-8066-c402828d754f",
@@ -4694,25 +4675,6 @@
             }
         },
         {
-            "Key": "111f96d3-3ed5-4bc1-9a83-231c5f18f167",
-            "Value": {
-                "id": "6488f6f1-7a0c-4255-b773-f158d83f1489",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "scripts\\scrSetVsync\\scrSetVsync.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "b5362ef1-fe9c-408d-9c93-c44c4488abee",
             "Value": {
                 "id": "4b33181d-8ea1-45ce-9390-7687c28ccac1",
@@ -4790,7 +4752,6 @@
         "7262fefb-9ed8-4b43-8ac1-8eb640067b32",
         "7667b91f-cf8f-42ce-9cad-58fd4578e84d",
         "1671de56-5ada-477d-82e8-07290be73ec5",
-        "111f96d3-3ed5-4bc1-9a83-231c5f18f167",
         "a566ed78-fe83-4638-9077-607f059bf6bb",
         "873761cd-7c20-4679-b5a8-54b9baabf20c",
         "38c045e2-7344-4889-80d2-c87a1f74b226",
@@ -4805,7 +4766,6 @@
         "908aa708-08b5-4cbb-aca6-ceedde2efbe3",
         "8c0d6882-0979-4cde-aaba-713763660939",
         "f551a449-fe8e-4d77-a39e-28642577f627",
-        "4539b8e9-9ef2-43d2-8e98-b87bcf098c2c",
         "517cb6e8-68cd-4be4-9a87-f464e38ccc4b",
         "aabd53ab-dcb4-4f54-ba1f-d00364e4950d"
     ],
