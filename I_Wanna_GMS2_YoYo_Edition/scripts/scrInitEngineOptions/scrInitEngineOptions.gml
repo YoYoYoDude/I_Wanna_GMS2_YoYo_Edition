@@ -10,7 +10,7 @@ global.debugNoDeath = false; // Enables debug god mode (toggle with Home key)
 global.debugInfJump = false; // Enables debug infinite jump (toggle with End key)
 global.debugShowHitbox = false; // Enables showing the player's hitbox (toggle with Del key)
 
-global.windowCaptionDef = "I Wanna Be The GMS2 Engine YoYo Edition"; // Sets the default window caption
+global.windowCaptionDef = "I Wanna Be The GMS2 Engine YoYo Edition v0.9"; // Sets the default window caption
 window_set_caption(global.windowCaptionDef);
 
 global.startRoom = rSample01; // Sets which room for the game to begin with
