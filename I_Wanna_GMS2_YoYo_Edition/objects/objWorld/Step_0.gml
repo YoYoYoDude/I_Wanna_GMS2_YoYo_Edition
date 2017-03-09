@@ -199,7 +199,7 @@ if (keyboard_check_pressed(vk_escape)) {
 
 // Restart game
 if (keyboard_check_pressed(vk_f2)) {
-    scrRestartGame();
+    game_restart();
     exit;
 }
 

@@ -1,7 +1,7 @@
 {
     "id": "f49f3b59-40a1-4590-9d0f-ea8b3b0d1a2b",
     "modelName": "GMSprite",
-    "mvc": "1.11",
+    "mvc": "1.12",
     "name": "sprWarp",
     "For3D": false,
     "HTile": false,
@@ -37,6 +37,8 @@
             ]
         }
     ],
+    "gridX": 0,
+    "gridY": 0,
     "height": 32,
     "layers": [
         {
@@ -51,10 +53,12 @@
             "visible": true
         }
     ],
+    "origin": 0,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,
+    "swfPrecision": 0,
     "textureGroup": 0,
     "type": 0,
     "width": 32,

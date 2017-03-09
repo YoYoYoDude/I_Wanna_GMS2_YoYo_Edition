@@ -6,7 +6,8 @@ playerIndex = (playerIndex + 1/5) mod 4;
 
 // Check for button inputs
 if (scrButtonCheckPressed(global.menuOptionsButton)) { // Go to the options menu
-    room_goto(rOptions);
+    global.menuSelectPrev[0] = fileSelect;
+	room_goto(rOptions);
 } else {
     if (!difSelectMode) {
         if (scrButtonCheckPressed(global.menuLeftButton)) { // Move left in the menu
@@ -22,7 +23,8 @@ if (scrButtonCheckPressed(global.menuOptionsButton)) { // Go to the options menu
                 fileSelect = 0;
 			}
         } else if (scrButtonCheckPressed(global.menuBackButton)) { // Go back to the title screen
-            room_goto(rTitle);
+            global.menuSelectPrev[0] = 0;
+			room_goto(rTitle);
         } else if (scrButtonCheckPressed(global.menuAcceptButton)) { // Accepted a file, go to difficulty select
             if (DIFFICULTY_MENU_MODE == 0) { // Use the difficulty select room to select difficulty
                 global.saveNum = fileSelect + 1;

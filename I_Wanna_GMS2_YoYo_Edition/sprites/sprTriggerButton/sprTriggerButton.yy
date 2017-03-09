@@ -1,7 +1,7 @@
 {
     "id": "c737d3c3-840a-486f-a331-c9ac7306a926",
     "modelName": "GMSprite",
-    "mvc": "1.11",
+    "mvc": "1.12",
     "name": "sprTriggerButton",
     "For3D": false,
     "HTile": false,
@@ -59,6 +59,8 @@
             ]
         }
     ],
+    "gridX": 0,
+    "gridY": 0,
     "height": 32,
     "layers": [
         {
@@ -73,10 +75,12 @@
             "visible": true
         }
     ],
+    "origin": 0,
     "playbackSpeed": 0,
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,
+    "swfPrecision": 0,
     "textureGroup": 0,
     "type": 0,
     "width": 32,

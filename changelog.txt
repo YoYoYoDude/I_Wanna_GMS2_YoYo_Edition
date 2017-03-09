@@ -1,2 +1,7 @@
+v0.9 (03/08/17):
+-Updated project to GMS2 v2.0.5.76
+-Tweaked main menu cursor so that it stays in the same place after switching between different menus
+-Some minor tweaks/fixes
+
 v0.8 (12/23/15):
 -Initial public release

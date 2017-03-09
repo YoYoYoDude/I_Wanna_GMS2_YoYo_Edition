@@ -1,7 +1,7 @@
 /// @description Initialize variables
 
 optionNum = 6; // Sets number of separate menu options available
-optionSelect = 0; // Sets which option is currently selected
+optionSelect = global.menuSelectPrev[1]; // Sets which option is currently selected
 
 xSelector = 124; // Sets where to draw the menu text on the x axis
 ySelector = 171; // Sets where to draw the menu text on the y axis

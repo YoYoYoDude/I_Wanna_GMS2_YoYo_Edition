@@ -1,5 +1,5 @@
-Thank you for downloading I Wanna Be The GMS2 Engine YoYo Edition v0.8!
-If you want to report bugs, request features, ask any questions, or check to make sure this is the most recent version, you can check my thread on the I Wanna Community forums
+Thank you for downloading I Wanna Be The GMS2 Engine YoYoYo Edition v0.9!
+If you want to report bugs, request features, ask any questions, or check to make sure this is the most recent version, you can check my thread on the I Wanna Community forums here: http://bit.ly/GMS2EngineYoYoYo
 If you want to contact me more directly, you can add me on Discord "YoYoYoDude#4708" or find me on Twitter @YoYoYoDude2
 
 About
@@ -29,7 +29,7 @@ Important notes
 - Make sure to set the "global.debugMode" variable in the "scrInitEngineOptions" script to "false" before releasing your game, otherwise debug keys will still work.
 - Make sure to set the "MD5_STR_ADD" string in the "scrInitEngineOptions" script to something unique to your game to make saves harder to modify. This can be set to anything you want it to be, but it should be pretty hard to predict as it's kind of similar to a password.
 - When creating new objects, the order of the objects in the Objects list matters for collision/event order. Therefore, when making new objects try to keep the type of object in the corresponding folder to prevent collision issues (ie put block objects in the Blocks folder, player killers in the Killers folder, etc).
-- This version of the engine was made and tested in GMS2 v2.0.3.56. If you are using a different version of GMS2, there could be potential bugs as they sometimes tweak how things work in certain versions.
+- This version of the engine was made and tested in GMS2 v2.0.5.76. If you are using a different version of GMS2, there could be potential bugs as they sometimes tweak how things work in certain versions.
 
 Special thanks
 - yuuutu for creating the fangame engine this engine was originally based off of

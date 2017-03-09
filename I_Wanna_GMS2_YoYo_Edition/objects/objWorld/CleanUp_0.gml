@@ -1,5 +1,4 @@
-/// @description scrRestartGame()
-/// Cleans up dynamic resources and restarts the game
+/// @description Clean up dynamic resources
 
 // Check if the game is currently paused
 if (global.gamePaused) {
@@ -9,5 +8,3 @@ if (global.gamePaused) {
 	// Enable automatically drawing the application surface
 	application_surface_draw_enable(true);
 }
-
-game_restart();

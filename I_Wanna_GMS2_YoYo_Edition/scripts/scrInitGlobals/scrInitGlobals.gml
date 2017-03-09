@@ -44,6 +44,9 @@ global.gameOverMusic = -1; // Keeps track of the game over music instance
 global.musicFading = false; // Keeps track of whether the main music is currently fading out
 global.currentGain = 0; // Keeps track of the current main music gain before a song is faded out
 
+global.menuSelectPrev[0] = 0; // Keeps track of the previously selected option when navigating away from the difficulty menu
+global.menuSelectPrev[1] = 0; // Keeps track of the previously selected option when navigating away from the options menu
+
 display_set_gui_size(surface_get_width(application_surface),surface_get_height(application_surface)); // Set the correct GUI size for the Draw GUI event
 
 global.controllerMode = false; // Keeps track of whether to use keyboard or controller for inputs

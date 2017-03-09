@@ -8,7 +8,7 @@ xSeperation = 239; // Sets how much to separate the save files in the menu
 appleIndex = 0;
 playerIndex = 0;
 
-fileSelect = 0; // Keeps track of what file we're currently on
+fileSelect = global.menuSelectPrev[0]; // Keeps track of what file we're currently on
 difSelectMode = false; // Keeps track of whether we're currently selecting a difficulty
 difSelect = 0; // Keeps track of what difficulty we're currently on
 

@@ -1,7 +1,7 @@
 {
     "id": "6f5774bb-e337-4dfb-baf0-b62044057593",
     "modelName": "GMSprite",
-    "mvc": "1.11",
+    "mvc": "1.12",
     "name": "sprBlood",
     "For3D": false,
     "HTile": false,
@@ -81,6 +81,8 @@
             ]
         }
     ],
+    "gridX": 0,
+    "gridY": 0,
     "height": 4,
     "layers": [
         {
@@ -95,10 +97,12 @@
             "visible": true
         }
     ],
+    "origin": 4,
     "playbackSpeed": 0,
     "playbackSpeedType": 0,
     "sepmasks": true,
     "swatchColours": null,
+    "swfPrecision": 0,
     "textureGroup": 0,
     "type": 0,
     "width": 4,

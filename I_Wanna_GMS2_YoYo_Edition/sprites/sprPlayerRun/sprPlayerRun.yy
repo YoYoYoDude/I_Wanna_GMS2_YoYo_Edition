@@ -1,7 +1,7 @@
 {
     "id": "5c93dbbe-3f2e-400e-b144-71d00406e30e",
     "modelName": "GMSprite",
-    "mvc": "1.11",
+    "mvc": "1.12",
     "name": "sprPlayerRun",
     "For3D": false,
     "HTile": false,
@@ -103,6 +103,8 @@
             ]
         }
     ],
+    "gridX": 0,
+    "gridY": 0,
     "height": 32,
     "layers": [
         {
@@ -117,10 +119,12 @@
             "visible": true
         }
     ],
+    "origin": 9,
     "playbackSpeed": 25,
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,
+    "swfPrecision": 0,
     "textureGroup": 0,
     "type": 0,
     "width": 32,

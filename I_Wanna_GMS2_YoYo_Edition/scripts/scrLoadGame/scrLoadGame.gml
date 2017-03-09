@@ -68,7 +68,7 @@ if (loadFile) {
     if (!saveValid) { // Check if the save is invalid
         // Save is invalid, restart the game
         show_message("Save invalid!");
-		scrRestartGame();
+		game_restart();
         exit;
     }
 }

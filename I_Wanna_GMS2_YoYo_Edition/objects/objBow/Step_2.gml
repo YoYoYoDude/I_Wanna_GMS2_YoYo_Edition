@@ -13,7 +13,7 @@ if (instance_exists(objPlayer)) {
         y += 1; // Need to draw the sprite a pixel off when flipped
     }
 	
-	layer = objPlayer.layer;
+	depth = objPlayer.depth - 1;
 } else {
     instance_destroy();
 }

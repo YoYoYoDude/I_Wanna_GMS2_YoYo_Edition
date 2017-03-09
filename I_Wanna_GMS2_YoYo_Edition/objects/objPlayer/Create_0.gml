@@ -22,7 +22,7 @@ if (global.grav == 1) {
 
 // Create the player's bow if on medium mode
 if (global.difficulty == 0 && global.gameStarted) {
-    instance_create_layer(x,y,layer,objBow);
+    instance_create_depth(x,y,depth-1,objBow);
 }
 
 // Save the game if currently set to autosave

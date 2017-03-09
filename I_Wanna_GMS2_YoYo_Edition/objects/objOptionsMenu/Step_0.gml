@@ -18,6 +18,7 @@ if (scrButtonCheckPressed(global.menuUpButton)) { // Move up in the menu
 	}
 } else if (scrButtonCheckPressed(global.menuBackButton)) { // Save changes and go back to the difficulty menu
     scrSaveConfig();
+	global.menuSelectPrev[1] = 0;
     room_goto(rMenu);
     exit;
 } else if (scrButtonCheckPressed(global.menuAcceptButton)) { // Select current option
@@ -30,12 +31,14 @@ if (scrButtonCheckPressed(global.menuUpButton)) { // Move up in the menu
         global.smoothingMode = !global.smoothingMode;
     } else if (optionSelect == 4) { // Save changes and go to the keyboard controls menu
         scrSaveConfig();
-        instance_create_layer(x,y,layer,objKeyboardMenu);
+        global.menuSelectPrev[1] = optionSelect;
+		instance_create_layer(x,y,layer,objKeyboardMenu);
         instance_destroy();
         exit;
     } else if (optionSelect == 5) { // Save changes and go to the controller options menu
         scrSaveConfig();
-        instance_create_layer(x,y,layer,objControllerMenu);
+        global.menuSelectPrev[1] = optionSelect;
+		instance_create_layer(x,y,layer,objControllerMenu);
 		instance_destroy();
         exit;
     }
